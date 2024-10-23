@@ -1,0 +1,59 @@
+.thumbnail {
+  width: 500px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.main-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+}
+
+.main-info {
+  display: inline-block;
+  position: center;
+  width: 500px;
+}
+
+.main-title {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 1000;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: rgb(255, 127, 80);
+}
+
+.main-subtext{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.main-subtext {
+margin-bottom: 4px;
+}
+
+.main-grid {
+  padding-top: 25px;
+  margin-left: -110px;
+  padding-left: 75px;
+  margin-right: -108px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  background-color: rgb(152, 251, 203);
+}
+
+.acronym{
+  color: red;
+}
