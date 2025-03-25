@@ -11,15 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/scroll-shadow.css">
+    <link rel="stylesheet" href="styles/animations.css">
   </head>
 
 
   <body>
+    <div class="scroll-shadow scroll-shadow-top"></div>
+    <div class="scroll-shadow scroll-shadow-bottom"></div>
     
     <header class="header">
       <div class="left-section">
@@ -27,34 +31,23 @@
       </div>
       <div class="middle-section">
         <p class="offer">
-          We offer private onsite & online academic tutoring to students from Primary to High Schools
+          We offer private individual & group onsite and online academic tutoring to students from Primary to High Schools
         </p>
       </div>
-      <div class="right-section">
-        <div></div>
-        <div class="fb-container">
-          <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
-          <img class="fb-icon" src="icons/fb.svg">
-          </a>
-          <div class="tooltip">Facebook Page</div>
-        </div>
-      </header>
+    </header>
 
-      </div>
-
-    </div>
-    
     <main>
       <!-- row 1 -->
       <section class="main-grid">
-        <div class="main-preview">
+        <div class="main-preview fade-in stagger-item">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/naplan.jpg">
           </div>
           <div class="main-info-grid">
             <div class="main-info">
               <p class="main-title">
-                NAPLAN Review
+                NAPLAN<br>
+                Review
               </p>
               <p class="main-subtext">
                 NAPLAN review for students in years 3, 5, 7, and 9
@@ -63,30 +56,31 @@
           </div>
         </div>
     
-        <div class="main-preview">
+        <div class="main-preview fade-in stagger-item">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/readws.jpg">
           </div>
           <div class="main-info-grid">
             <div class="main-info">
               <p class="main-title">
-                Reading, Writing, and Spelling
+                Reading, Spelling, Writing, Math, Accounting
               </p>
               <p class="main-subtext">
-                We teach children from 4 years old to learn reading, spelling, and writing
+                We teach children from 4 years old to learn reading, spelling, and writing. We also teach math at all levels and accounting.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="main-preview">
+        <div class="main-preview fade-in stagger-item">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/icas.webp">
           </div>
           <div class="main-info-grid">
             <div class="main-info">
               <p class="main-title">
-                ICAS Review
+                ICAS<br>
+                Review
               </p>
               <p class="main-subtext">
                 ICAS review for students who will take the ICAS test
@@ -97,7 +91,7 @@
       </section>
       
       <!-- row 2 -->
-      <section class="about-grid">
+      <section class="about-grid fade-in stagger-item">
         <div>
           <div class="about-info-grid">
             <div class="about-info">
@@ -105,10 +99,18 @@
                 Location
               </p>
               <p class="about-title">
-                10 Lappin Street
+                Onsite
+              </p>
+              <p class="about-subtext">
+                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
+                </a>
               </p>
               <p class="about-title">
-                Orange, NSW
+                Online
+              </p>
+              <p class="about-subtext">
+                Worldwide - English
               </p>
             </div>
           </div>
@@ -143,13 +145,20 @@
                 Contact
               </p>
               <p class="about-title">
-                jcdtutorialservices
+                Email
+              </p>
+              <p class="about-subtext">
+                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
+                  jcdtutorialservices@gmail.com
+                </button>
               </p>
               <p class="about-title">
-                @gmail.com
+                Phone
               </p>
-              <p class="about-title">
-                0410 442716
+              <p class="about-subtext">
+                <button class="copy-button" onclick="copyToClipboard('0410 442716')">
+                  0410 442716
+                </button>
               </p>
             </div>
           </div>
@@ -157,7 +166,7 @@
       </section>
 
       <!-- row 3 -->
-      <section class = main-grid>
+      <section class = "main-grid">
         <div>
           <div class="main-info-grid">
             <div class="main-info">
@@ -207,7 +216,7 @@
                 Founder, CEO
               </p>
               <p class="about-subtext">
-                Janice C. Dapitan, MPA, LPT
+                Janice C. Dapitan, CA, MPA, LPT
               </p>
               <img class="profile" src="pictures/pfp.jpg">
               <p class="about-subtext">
@@ -272,6 +281,23 @@
 
       <!-- row 6 -->
       <section class="main-grid">
+        
+        <div class="main-preview">
+          <div class="main-info-grid">
+            <div class="main-info">
+              <p class="about-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="main-subtext">
+                Abrielle enjoys mathematics. She's confident in reading and she's trying her best in spelling. At young age, she was able to do all of these and we're very grateful to JCD Tutorial, especially to Teacher Jan for her patience and understanding. Thank you
+              </p>
+              <p class="about-title"> 
+                - Kate Anzia
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="main-preview">
           <div class="main-info-grid">
             <div class="main-info">
@@ -279,26 +305,10 @@
                 &#11088 &#11088 &#11088 &#11088 &#11088
               </p>
               <p class="main-subtext">
-                JCD Tutorial is one of the Teaching service in Orange. Jan is absolutely talented and wonderful. She helped my son with his writing skill improvement. I must say having Jan to help my son learn to write has been blessings. I am strongly recommending her service with 10/10. Very reasonable price and so kind and innovative in terms of teaching. Thank you Jan.
+                JCD Tutorial is one of the best Teaching service in Orange. Jan is absolutely talented and wonderful. She helped My son with his writing skill improvement. I must say having Jan to help my son learn to write has been blessings. I am strongly recommended Her service with 10/10. Very reasonable price and So kind and innovative in terms of teaching. Thank you Jan.
               </p>
               <p class="about-title">
-                - Amit P
-              </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="main-preview">
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="about-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="main-subtext"> 
-                Being in the kid's ministry, I learned a lot about kids. They're innocent and always curious about things. They always ask questions, and whatever you say, they take it seriously as right. That's why I tell myself always, "be a good teacher in every aspect, make a difference to their lives". Same with parents, I learned that parents should be careful in choosing people to partner with them in teaching, molding and nurturing their children's gifts, talents and inner being. For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it". God bless you always
-              </p>
-              <p class="about-title"> 
-                - JC P
+                - Amit Patel
               </p>
             </div>
           </div>
@@ -311,15 +321,66 @@
                 &#11088 &#11088 &#11088 &#11088 &#11088
               </p>
               <p class="main-subtext">
-                I recommend JCD Tutorial Services because it has a reasonable price, and the tutor focuses on helping her tutees improve their skills. She brings out the best in her students because she motivates them and is very patient when teaching them
+                I recommend JCD Tutorial Services because it has a reasonable price, and the tutor focuses on helping her tutees improve their skills. She brings out the best in her students because she motivates them and is very patient when teaching them.
               </p>
               <p class="about-title"> 
-                - Jan A
+                - Mae Mendoza
               </p>
             </div>
           </div>
         </div>
+
+        <div class="main-preview">
+          <div class="main-info-grid">
+            <div class="main-info">
+              <p class="about-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="main-subtext"> 
+                I was mam janice student way back in high school she is a great teacher she brings out the best in her student my favorite subject was math i learned so many methods from her in solving math problems i totally recommend her as a very tutor if she could just be my teacher in high school then it would so be great
+              </p>
+              <p class="about-title"> 
+                - Elenito Palang Jr.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="main-preview">
+          <div class="main-info-grid">
+            <div class="main-info">
+              <p class="about-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="main-subtext"> 
+                Being in the kid's ministry, I learned a lot about kids. They're innocent and always curious about things. They always ask questions, and whatever you say, they take it seriously as right. That's why I tell to myself always, "be a good teacher in every aspect, make a difference to their lives". Same with parents, I learned that parents should be careful in choosing people to partner with them in teaching, molding and nurturing their children's gifts, talents and inner being. For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it".  God bless you always.
+              </p>
+              <p class="about-title"> 
+                - JC Princess
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-preview">
+          <div class="main-info-grid">
+            <div class="main-info">
+              <p class="about-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="main-subtext"> 
+                A place where you are treated like a family and at the same time, you are learning.
+              </p>
+              <p class="about-title"> 
+                - Dephren Jamdict
+              </p>
+            </div>
+          </div>
+        </div>
+
       </section>
+
+      
 
       <!-- row 7 -->
       <section class="main-grid">
@@ -352,8 +413,26 @@
         </div>
       </section>
 
+      <!-- social media -->
+      <section class="about-grid">
+        <div></div>
+        <div class="about-info-grid">
+          <div class="about-info">
+            <p class="about">Connect With Us</p>
+            <div class="fb-container">
+              <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
+                <img class="fb-icon" src="icons/fb.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
     </main>
-    
+    <script src="scripts/scroll-shadow.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/copy-to-clipboard.js"></script>
   </body>
 
 </html>
