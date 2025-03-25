@@ -223,3 +223,44 @@
   }
 }
 
+.fb-post-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.fb-post-container iframe {
+  max-width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .fb-post-container iframe {
+    width: 100%;
+    height: 900px;
+  }
+}
+
+.fb-post-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.fb-post-container iframe {
+  max-width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .fb-post-container iframe {
+    width: 100%;
+    height: 900px;
+  }
+}
