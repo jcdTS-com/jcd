@@ -19,23 +19,33 @@
   padding-top: 10px;
   font-size: 30px;
   font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 10px;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 .about-subtext{
   text-align: center;
   font-size: 20px;
   color: black;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.about-subtext a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-subtext .copy-button {
+  width: 100%;
+  text-align: center;
 }
 
 .about-grid {
   padding-top: 25px;
-  margin-left: -110px;
-  margin-right: -110px;
-  /* padding-right: 25px; */
-  /* padding-right: 75px; */
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,8 +53,6 @@
   justify-items: center;
   column-gap: 20px;
   row-gap: 40px;
-  /* background-color: rgb(250, 172, 224); */
-  /* background-color: rgb(0, 238, 247); */
 }
 
 .about {
@@ -52,14 +60,41 @@
   text-align: center;
   font-size: 35px;
   font-weight: 1000;
-  line-height: 20px;
-  margin-bottom: 10px;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 .profile {
   width: 300px;
   border-radius: 500px;
   margin-top: 10px;
+}
+
+.copy-button {
+  background: linear-gradient(135deg, rgba(250,172,224,0.4) 0%, rgba(0,238,247,0.4) 100%);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 0, 128);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.copy-button:hover {
+  background: linear-gradient(135deg, rgba(250,172,224,0.6) 0%, rgba(0,238,247,0.6) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.copy-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* laptop 1440 ===================================================== */
@@ -83,6 +118,21 @@
   }
 }
 
+/* laptop and large tablets */
+@media (max-width: 1200px) {
+  .about-info {
+    width: 300px;
+  }
+
+  .about {
+    font-size: 28px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+}
+
 /* laptop 1024 ===================================================== */
 
 @media (max-width: 1024px) {
@@ -98,6 +148,17 @@
   .profile {
     width: 250px;
     margin: 0;
+  }
+}
+
+/* tablets */
+@media (max-width: 900px) {
+  .about-info {
+    width: 250px;
+  }
+
+  .about-subtext {
+    font-size: 16px;
   }
 }
 
@@ -124,73 +185,71 @@
   }
 }
 
+/* small tablets and large phones */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .profile {
+    width: 200px;
+  }
+}
+
 /* phone 676 ===================================================== */
 
 @media (max-width: 676px) {
 
   .about-grid {
-    /* margin-right: -700px; */
+    margin: 0;
+    padding: 15px;
     grid-template-columns: 1fr;
   }
 
   .about-info {
-    width: 500px;
-  }
-
-  /* .about {
-    margin-top: 50px;
-    font-size: 100px;
-    line-height: 100px;
-  } */
-
-  .about-title {
-    line-height: 30px;
-    font-size: 30px;
-  }
-
-  .about-subtext {
-    text-align: center;
-  }
-
-  /* .profile {
-    width: 750px;
-    margin-left: -25px;
-  } */
-}
-
-/* phone 425 ===================================================== */
-
-@media (max-width: 425px) {
-
-  .about-grid {
-    /* margin-right: -700px; */
-    grid-template-columns: 1fr;
-  }
-
-  .about-info {
-    width: 900px;
+    width: 100%;
+    max-width: 400px;
   }
 
   .about {
-    margin-top: 50px;
-    /* font-size: 100px;
-    line-height: 100px; */
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 15px 0;
   }
 
   .about-title {
-    line-height: 75px;
-    font-size: 75px;
+    font-size: 20px;
+    line-height: 1.3;
   }
 
   .about-subtext {
-    margin-top: 50px;
-    /* width: 850px;
-    font-size: 60px; */
+    font-size: 16px;
+    margin: 10px 0;
+    width: auto;
   }
 
-  /* .profile {
-    width: 750px;
-    margin-left: -25px;
-  } */
+  .profile {
+    width: 200px;
+    margin: 15px auto;
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1530px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .profile {
+    max-width: 300px;
+    width: 100%;
+    margin: 15px auto;
+  }
 }
 
