@@ -28,14 +28,13 @@
 }
 
 .main-title {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 30px;
-  font-weight: 1000;
-  line-height: 30px;
-  margin-bottom: 10px;
   color: rgb(202, 45, 81);
   /* color: rgb(100, 246, 148); */
+  text-align: center;
+  font-size: 35px;
+  font-weight: 1000;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 .main-subtext{
@@ -43,14 +42,13 @@
   font-size: 20px;
   color: black;
   margin-bottom: 4px;
+  line-height: 1.6;
 }
 
 .main-grid {
   padding-top: 25px;
-  margin-left: -110px;
-  margin-right: -110px;
-  /* padding-right: 25px; */
-  /* padding-right: 75px; */
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -67,27 +65,27 @@
 }
 
 .review-button {
-  background-color: rgb(200, 0, 0);
-  color: rgb(255, 255, 255);
+  font-family: 'Archivo Black', sans-serif;
+  background: linear-gradient(135deg, rgba(250,172,224,0.8) 0%, rgba(0,238,247,0.8) 100%);
+  color: rgb(202, 45, 81);
   border: none;
-  /* height: 36px;
-  width: 74px; */
-  border-radius: 100px;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 30px;
+  border-radius: 25px;
+  font-size: 24px;
   cursor: pointer;
-  margin-left: 8px;
-  transition: box-shadow 0.15s;
-  vertical-align: top;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .review-button:hover {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, rgba(250,172,224,1) 0%, rgba(0,238,247,1) 100%);
+}
+
+.review-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* laptop 1440 ===================================================== */
@@ -131,7 +129,10 @@
     width: 225px;
   }
 
-  
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 /* phone 676 ===================================================== */
@@ -140,59 +141,85 @@
 
   .thumbnail {
     /* margin-top: 125px; */
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
 
   .main-grid {
-    /* margin-right: -700px; */
+    margin: 0;
+    padding: 15px;
     grid-template-columns: 1fr;
   }
 
   .main-info {
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
   }
 
   .main-title {
-    line-height: 30px;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
   .main-subtext {
-    text-align: center;
-    /* font-size: 60px;
-    width: 900px; */
+    font-size: 16px;
+    width: auto;
+  }
+
+  .review-button {
+    font-size: 20px;
+    padding: 15px 30px;
   }
 }
 
-/* phone 425 ===================================================== */
-
-@media (max-width: 425px) {
-
+/* laptop and large tablets */
+@media (max-width: 1200px) {
   .thumbnail {
-    /* margin-top: 125px; */
-    width: 1000px;
-    height: 400px;
-  }
-
-  .main-grid {
-    /* margin-right: -700px; */
-    grid-template-columns: 1fr;
+    width: 300px;
+    height: 120px;
   }
 
   .main-info {
-    width: 900px;
+    width: 300px;
   }
 
   .main-title {
-    line-height: 75px;
-    font-size: 75px;
+    font-size: 24px;
+  }
+}
+
+/* tablets */
+@media (max-width: 900px) {
+  .thumbnail {
+    width: 250px;
+    height: 100px;
+  }
+
+  .main-info {
+    width: 250px;
   }
 
   .main-subtext {
-    text-align: center;
-    /* font-size: 60px; */
-    width: 900px;
+    font-size: 16px;
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1530px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .main-info {
+    width: 100%;
+    max-width: 500px;
   }
 }
 
