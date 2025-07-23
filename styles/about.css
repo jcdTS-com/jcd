@@ -64,10 +64,30 @@
   margin-bottom: 15px;
 }
 
-.profile {
+.profile-container {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
   width: 300px;
-  border-radius: 500px;
-  margin-top: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.profile-container:hover {
+  animation: none;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid rgba(250,172,224,0.4);
 }
 
 .copy-button {
@@ -253,3 +273,67 @@
   }
 }
 
+.phone-numbers {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.phone-numbers .copy-button {
+  max-width: 145px;
+}
+
+@media (max-width: 676px) {
+  .phone-numbers {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone-numbers .copy-button {
+    max-width: 300px;
+  }
+}
+
+.bio-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin-top: 20px;
+}
+
+.bio-dropdown.active {
+  max-height: 1000px;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgb(0, 0, 128);
+  filter: drop-shadow(0 3px 3px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.active {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+}

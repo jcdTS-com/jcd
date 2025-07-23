@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/scroll-shadow.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/navigation.css">
   </head>
 
 
@@ -40,7 +41,7 @@
 
     <main>
       <!-- row 1 -->
-      <section class="main-grid">
+      <section id="subjects" class="main-grid">
         <div class="main-preview fade-in stagger-item">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/naplanicas.jpg">
@@ -92,83 +93,8 @@
           </div>
         </div>
       </section>
-      
+
       <!-- row 2 -->
-      <section class="about-grid fade-in stagger-item">
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Location
-              </p>
-              <p class="about-title">
-                Onsite
-              </p>
-              <p class="about-subtext">
-                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
-                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
-                </a>
-              </p>
-              <p class="about-title">
-                Online
-              </p>
-              <p class="about-subtext">
-                Worldwide - English
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Hours
-              </p>
-              <p class="about-title">
-                Monday - Friday (Online)
-              </p>
-              <p class="about-subtext">
-                6:30PM - 8:30PM
-              </p>
-              <p class="about-title">
-                Saturday (Onsite)
-              </p>
-              <p class="about-subtext">
-                8AM - 8PM
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Contact
-              </p>
-              <p class="about-title">
-                Email
-              </p>
-              <p class="about-subtext">
-                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
-                  jcdtutorialservices@gmail.com
-                </button>
-              </p>
-              <p class="about-title">
-                Phone
-              </p>
-              <p class="about-subtext">
-                <button class="copy-button" onclick="copyToClipboard('0410 442716')">
-                  0410 442716
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- row 3 -->
       <section class = "main-grid">
         <div>
           <div class="main-info-grid">
@@ -210,8 +136,8 @@
         </div>
       </section>
 
-      <!-- row 4 -->
-      <section class="about-grid">
+      <!-- row 3 -->
+      <section id="background" class="about-grid">
         <div>
           <div class="about-info-grid">
             <div class="about-info">
@@ -222,12 +148,15 @@
                 Janice C. Dapitan, CA, MPA, LPT <br>
                 "Jan-Jan"
               </p>
-              <div style="display: flex; justify-content: center;">
+              <div class="profile-container" onclick="toggleBio()">
                 <img class="profile" src="pictures/pfp.jpg">
+                <div class="dropdown-arrow"></div>
               </div>
-              <p class="about-subtext">
-                Jan-Jan is an Accountant by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
-              </p>
+              <div class="bio-dropdown">
+                <p class="about-subtext">
+                  Jan-Jan is an Accountant by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -264,7 +193,7 @@
         </div>
       </section>
 
-      <!-- row 5 -->
+      <!-- row 4 -->
       <section class="main-grid">
         <div class="main-preview">
           <div class="main-info-grid">
@@ -291,8 +220,8 @@
         </div>
       </section>
 
-      <!-- row 6 -->
-      <section class="main-grid">
+      <!-- row 5 -->
+      <section id="reviews" class="main-grid">
         
         <div class="main-preview">
           <div class="main-info-grid">
@@ -394,7 +323,7 @@
 
       
 
-      <!-- row 7 -->
+      <!-- row 6 -->
       <section class="main-grid">
         <div class="main-preview">
           <div class="main-info-grid">
@@ -425,8 +354,8 @@
         </div>
       </section>
 
-      <!-- social media -->
-      <section class="about-grid">
+      <!-- social media --> <!-- row 7 -->
+      <section id="inquire" class="about-grid">
         <div></div>
         <div class="about-info-grid">
           <div class="about-info">
@@ -441,10 +370,95 @@
         <div></div>
       </section>
 
+      <!-- location/hours/contact info -->
+      <section class="about-grid fade-in stagger-item">
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Location
+              </p>
+              <p class="about-title">
+                Onsite
+              </p>
+              <p class="about-subtext">
+                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
+                </a>
+              </p>
+              <p class="about-title">
+                Online
+              </p>
+              <p class="about-subtext">
+                Worldwide - English
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Hours
+              </p>
+              <p class="about-title">
+                Monday - Friday (Online)
+              </p>
+              <p class="about-subtext">
+                6:30PM - 8:30PM
+              </p>
+              <p class="about-title">
+                Saturday (Onsite)
+              </p>
+              <p class="about-subtext">
+                8AM - 8PM
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Contact
+              </p>
+              <p class="about-title">
+                Email
+              </p>
+              <p class="about-subtext">
+                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
+                  jcdtutorialservices@gmail.com
+                </button>
+              </p>
+              <p class="about-title">
+                Message | Call
+              </p>
+              <p class="about-subtext phone-numbers">
+                <button class="copy-button" onclick="copyToClipboard('0410 442716')">
+                  0410442716
+                </button>
+                <button class="copy-button" onclick="copyToClipboard('0410 442717')">
+                  0499296726
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="fb-post-container">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid0u9ztq8fAYDK9ap2sRGmhFppa6Xva544Jf4V5QzuE2xHVRuzQKV3E5MuQwJstg6L4l&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02CiHZidMi1NkwqTPdvyvPHXiLRhve44ATCZgkGFhphevn1zgwSbQcCYf3xJbqhgftl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
+
+      <nav class="bottom-nav">
+        <button class="nav-button" onclick="scrollToSection('subjects')">Subjects 📚</button>
+        <button class="nav-button" onclick="scrollToSection('background')">Background 📜</button>
+        <button class="nav-button" onclick="scrollToSection('reviews')">Reviews ⭐</button>
+        <button class="nav-button" onclick="scrollToSection('inquire')">Inquire 📧</button>
+      </nav>
 
     </main>
     <script src="scripts/scroll-shadow.js"></script>
