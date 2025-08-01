@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/scroll-shadow.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/flip-card.css">
   </head>
 
 
@@ -40,99 +41,81 @@
     </header>
 
     <main>
-      <!-- row 1 -->
-      <section id="subjects" class="main-grid">
-        <div class="main-preview fade-in stagger-item">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/naplanicas.jpg">
+      <!-- Subjects section -->
+      <section id="subjects" class="single-column-section">
+        <div class="subject-container fade-in stagger-item">
+          <div class="subject-content">
+            <p class="main-title">
+              NAPLAN & ICAS Review
+            </p>
+            <p class="main-subtext">
+              NAPLAN review for students in years 3, 5, 7, and 9<br>
+              ICAS review for students who will take the ICAS test
+            </p>
           </div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                NAPLAN & ICAS<br>
-                Review
-              </p>
-              <p class="main-subtext">
-                NAPLAN review for students in years 3, 5, 7, and 9<br>
-                ICAS review for students who will take the ICAS test
-              </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="main-preview fade-in stagger-item">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/readws.jpg">
-          </div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                Reading, Spelling, & Writing
-              </p>
-              <p class="main-subtext">
-                We teach children from 4 years old to learn reading, spelling, and writing
-              </p>
-            </div>
+          <div class="subject-image">
+            <img src="thumbnails/naplanicas.jpg" alt="NAPLAN & ICAS">
           </div>
         </div>
 
-        <div class="main-preview fade-in stagger-item">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/STEM.jpg">
+        <div class="subject-container fade-in stagger-item">
+          <div class="subject-image">
+            <img src="thumbnails/readws.jpg" alt="Reading, Spelling, & Writing">
           </div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                STEM &<br>
-                Accounting
-              </p>
-              <p class="main-subtext">
-                Science, Technology, Engineering, Mathematics and Accounting tutorials for all levels
-              </p>
-            </div>
+          <div class="subject-content">
+            <p class="main-title">
+              Reading, Spelling, & Writing
+            </p>
+            <p class="main-subtext">
+              We teach children from 4 years old to learn<br>
+              reading, spelling, and writing
+            </p>
+          </div>
+        </div>
+
+        <div class="subject-container fade-in stagger-item">
+          <div class="subject-content">
+            <p class="main-title">
+              STEM & Accounting
+            </p>
+            <p class="main-subtext">
+              Science, Technology, Engineering, Mathematics and <br>
+              Accounting tutorials for all levels
+            </p>
+          </div>
+          <div class="subject-image">
+            <img src="thumbnails/STEM.jpg" alt="STEM & Accounting">
           </div>
         </div>
       </section>
 
-      <!-- row 2 -->
-      <section class = "main-grid">
-        <div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                VISION
-              </p>
-              <p class="main-subtext">
-                To be a premier tutorial center that values student-centered and interactive learning.
-              </p>
-            </div>
-          </div>
+      <!-- Vision/Mission/Goal section -->
+      <section class="single-column-section">
+        <div class="vision-container">
+          <p class="main-title">
+            VISION
+          </p>
+          <p class="main-subtext">
+            To be a premier tutorial center that values student-centered and interactive learning.
+          </p>
         </div>
 
-        <div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                MISSION
-              </p>
-              <p class="main-subtext">
-                To help learners develop a study habit.
-              </p>
-            </div>
-          </div>
+        <div class="vision-container">
+          <p class="main-title">
+            MISSION
+          </p>
+          <p class="main-subtext">
+            To help learners develop a study habit.
+          </p>
         </div>
 
-        <div>
-          <div class="main-info-grid">
-            <div class="main-info">
-              <p class="main-title">
-                GOAL
-              </p>
-              <p class="main-subtext">
-                To enable learners develop the <span class="acronym">A</span>bility to <span class="acronym">C</span>omprehend, <span class="acronym">H</span>olistic <span class="acronym">I</span>ntelligence, <span class="acronym">E</span>motional <span class="acronym">V</span>alue and <span class="acronym">E</span>xcellence - <span class="acronym">ACHIEVE</span>
-              </p>
-            </div>
-          </div>
+        <div class="vision-container">
+          <p class="main-title">
+            GOAL
+          </p>
+          <p class="main-subtext">
+            To enable learners develop the <span class="acronym">A</span>bility to <span class="acronym">C</span>omprehend, <span class="acronym">H</span>olistic <span class="acronym">I</span>ntelligence, <span class="acronym">E</span>motional <span class="acronym">V</span>alue and <span class="acronym">E</span>xcellence - <span class="acronym">ACHIEVE</span>
+          </p>
         </div>
       </section>
 
@@ -148,14 +131,17 @@
                 Janice C. Dapitan, CA, MPA, LPT <br>
                 "Jan-Jan"
               </p>
-              <div class="profile-container" onclick="toggleBio()">
-                <img class="profile" src="pictures/pfp.jpg">
-                <div class="dropdown-arrow"></div>
-              </div>
-              <div class="bio-dropdown">
-                <p class="about-subtext">
-                  Jan-Jan is an Accountant by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
-                </p>
+              <div class="profile-container" onclick="toggleFlip()">
+                <div class="profile-card">
+                  <div class="profile-front">
+                    <img class="profile-image" src="pictures/pfp.jpg">
+                  </div>
+                  <div class="profile-back">
+                    <div class="profile-text">
+                      Jan-Jan is an Accountant <br> by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -220,27 +206,21 @@
         </div>
       </section>
 
-      <!-- row 5 -->
-      <section id="reviews" class="main-grid">
-        
-        <div class="main-preview">
-          <div class="main-info-grid">
+      <!-- Reviews section -->
+      <section id="reviews">
+        <div id="reviews-container">
+          <div class="main-preview">
+            <!-- First review -->
             <div class="main-info">
-              <p class="about-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
+              <p class="about-title">&#11088 &#11088 &#11088 &#11088 &#11088</p>
               <p class="main-subtext">
                 Abrielle enjoys mathematics. She's confident in reading and she's trying her best in spelling. At young age, she was able to do all of these and we're very grateful to JCD Tutorial, especially to Teacher Jan for her patience and understanding. Thank you
               </p>
-              <p class="about-title"> 
-                - Kate Anzia
-              </p>
+              <p class="about-title">- Kate Anzia</p>
             </div>
           </div>
-        </div>
 
-        <div class="main-preview">
-          <div class="main-info-grid">
+          <div class="main-preview">
             <div class="main-info">
               <p class="about-title">
                 &#11088 &#11088 &#11088 &#11088 &#11088
@@ -253,10 +233,8 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="main-preview">
-          <div class="main-info-grid">
+          <div class="main-preview">
             <div class="main-info">
               <p class="about-title"> 
                 &#11088 &#11088 &#11088 &#11088 &#11088
@@ -269,10 +247,8 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="main-preview">
-          <div class="main-info-grid">
+          <div class="main-preview">
             <div class="main-info">
               <p class="about-title"> 
                 &#11088 &#11088 &#11088 &#11088 &#11088
@@ -285,26 +261,22 @@
               </p>
             </div>
           </div>
-        </div>
   
-        <div class="main-preview">
-          <div class="main-info-grid">
+          <div class="main-preview">
             <div class="main-info">
               <p class="about-title"> 
                 &#11088 &#11088 &#11088 &#11088 &#11088
               </p>
               <p class="main-subtext"> 
-                Being in the kid's ministry, I learned a lot about kids. They're innocent and always curious about things. They always ask questions, and whatever you say, they take it seriously as right. That's why I tell to myself always, "be a good teacher in every aspect, make a difference to their lives". Same with parents, I learned that parents should be careful in choosing people to partner with them in teaching, molding and nurturing their children's gifts, talents and inner being. For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it".  God bless you always.
+                For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it". God bless you always.
               </p>
               <p class="about-title"> 
                 - JC Princess
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="main-preview">
-          <div class="main-info-grid">
+          <div class="main-preview">
             <div class="main-info">
               <p class="about-title"> 
                 &#11088 &#11088 &#11088 &#11088 &#11088
@@ -317,8 +289,8 @@
               </p>
             </div>
           </div>
-        </div>
 
+        </div>
       </section>
 
       
@@ -451,6 +423,7 @@
       <div class="fb-post-container">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid0u9ztq8fAYDK9ap2sRGmhFppa6Xva544Jf4V5QzuE2xHVRuzQKV3E5MuQwJstg6L4l&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02CiHZidMi1NkwqTPdvyvPHXiLRhve44ATCZgkGFhphevn1zgwSbQcCYf3xJbqhgftl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02vhd3oAbyTjWV6jYVnqjwAAqnQgCF7Dv6LVhvibaVLHb6X7mBj8WsqastxFmVFEtzl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
 
       <nav class="bottom-nav">
@@ -459,11 +432,37 @@
         <button class="nav-button" onclick="scrollToSection('reviews')">Reviews ⭐</button>
         <button class="nav-button" onclick="scrollToSection('inquire')">Inquire 📧</button>
       </nav>
-
     </main>
+
     <script src="scripts/scroll-shadow.js"></script>
     <script src="scripts/animations.js"></script>
     <script src="scripts/copy-to-clipboard.js"></script>
   </body>
+</html>
 
+      <nav class="bottom-nav">
+        <button class="nav-button" onclick="scrollToSection('subjects')">Subjects 📚</button>
+        <button class="nav-button" onclick="scrollToSection('background')">Background 📜</button>
+        <button class="nav-button" onclick="scrollToSection('reviews')">Reviews ⭐</button>
+        <button class="nav-button" onclick="scrollToSection('inquire')">Inquire 📧</button>
+      </nav>
+
+    <script src="scripts/copy-to-clipboard.js"></script>
+</html>
+    </main>
+
+    <script src="scripts/scroll-shadow.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/copy-to-clipboard.js"></script>
+  </body>
+</html>
+
+      <nav class="bottom-nav">
+        <button class="nav-button" onclick="scrollToSection('subjects')">Subjects 📚</button>
+        <button class="nav-button" onclick="scrollToSection('background')">Background 📜</button>
+        <button class="nav-button" onclick="scrollToSection('reviews')">Reviews ⭐</button>
+        <button class="nav-button" onclick="scrollToSection('inquire')">Inquire 📧</button>
+      </nav>
+
+    <script src="scripts/copy-to-clipboard.js"></script>
 </html>
