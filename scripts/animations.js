@@ -52,59 +52,63 @@ function toggleReview(reviewId) {
   }
 }
 
-// Drag to scroll functionality for reviews
+// Drag to scroll functionality for reviews and seamless loop
 document.addEventListener('DOMContentLoaded', () => {
+  // Drag to scroll for #reviews
   const slider = document.querySelector('#reviews');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
+  if (slider) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.style.cursor = 'grabbing';
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.style.cursor = 'grabbing';
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
 
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.style.cursor = 'grab';
-  });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.style.cursor = 'grab';
+    });
 
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.style.cursor = 'grab';
-  });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.style.cursor = 'grab';
+    });
 
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-});
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
+  // Seamless loop for #reviews-container
   const reviewsContainer = document.querySelector('#reviews-container');
-  const originalReviews = document.querySelectorAll('#reviews-container .main-preview');
-  
-  // Clone reviews for seamless loop
-  originalReviews.forEach(review => {
-    const clone = review.cloneNode(true);
-    reviewsContainer.appendChild(clone);
-  });
+  if (reviewsContainer) {
+    const originalReviews = document.querySelectorAll('#reviews-container .main-preview');
+    
+    // Clone reviews for seamless loop
+    originalReviews.forEach(review => {
+      const clone = review.cloneNode(true);
+      reviewsContainer.appendChild(clone);
+    });
 
-  // Pause animation on user interaction
-  reviewsContainer.addEventListener('mousedown', () => {
-    reviewsContainer.style.animationPlayState = 'paused';
-  });
+    // Pause animation on user interaction
+    reviewsContainer.addEventListener('mousedown', () => {
+      reviewsContainer.style.animationPlayState = 'paused';
+    });
 
-  reviewsContainer.addEventListener('mouseup', () => {
-    reviewsContainer.style.animationPlayState = 'running';
-  });
+    reviewsContainer.addEventListener('mouseup', () => {
+      reviewsContainer.style.animationPlayState = 'running';
+    });
 
-  reviewsContainer.addEventListener('mouseleave', () => {
-    reviewsContainer.style.animationPlayState = 'running';
-  });
+    reviewsContainer.addEventListener('mouseleave', () => {
+      reviewsContainer.style.animationPlayState = 'running';
+    });
+  }
 });
