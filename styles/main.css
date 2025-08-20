@@ -340,44 +340,70 @@
   margin-left: 50%;
   transform: translateX(-50%);
   position: relative;
-  overflow-x: hidden;  /* Changed from auto to hidden */
+  overflow: hidden;
   padding: 20px 0;
-  cursor: grab;
-  -webkit-overflow-scrolling: touch;
-}
-
-#reviews:active {
-  cursor: grabbing;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);  /* Move by half to create seamless loop */
-  }
 }
 
 #reviews-container {
   display: flex;
-  gap: 20px;
-  padding: 0 calc((100vw - 1200px) / 2);  /* Dynamic padding based on viewport */
-  animation: scroll 30s linear infinite;
-  min-width: fit-content;  /* Allow container to grow as needed */
-}
-
-#reviews-container:hover {
-  animation-play-state: paused;
+  gap: 60px;
+  padding: 0 calc(50% - 200px); /* Centers the active review */
+  transition: transform 0.5s ease;
 }
 
 #reviews .main-preview {
-  flex: 0 0 400px; /* Fixed width for each review card */
-  scroll-snap-align: start;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex: 0 0 400px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+#reviews .main-preview.active {
+  opacity: 1;
+}
+
+/* Responsive styles for reviews */
+@media (max-width: 1024px) {
+  #reviews .main-preview {
+    flex: 0 0 350px;
+  }
+  
+  #reviews-container {
+    padding: 0 calc(50% - 175px);
+  }
+}
+
+@media (max-width: 768px) {
+  #reviews .main-preview {
+    flex: 0 0 300px;
+  }
+  
+  #reviews-container {
+    padding: 0 calc(50% - 150px);
+    gap: 40px;
+  }
+
+  .review-nav-button {
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  #reviews .main-preview {
+    flex: 0 0 280px;
+  }
+  
+  #reviews-container {
+    padding: 0 calc(50% - 140px);
+    gap: 30px;
+  }
+
+  .main-subtext {
+    font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 16px;
+  }
 }
 
 /* Hide scrollbar but keep functionality */
@@ -401,4 +427,61 @@
 #reviews::-webkit-scrollbar-thumb {
   background: rgba(250,172,224,0.5);
   border-radius: 4px;
+}
+
+.review-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, rgba(250,172,224,0.8) 0%, rgba(0,238,247,0.8) 100%);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;  /* Increased font size */
+  cursor: pointer;
+  z-index: 100;  /* Increased z-index to ensure visibility */
+  transition: all 0.3s ease;
+  color: rgb(202, 45, 81);
+  font-family: 'Archivo Black', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  opacity: 1;  /* Ensure buttons are visible */
+}
+
+.review-nav-button:hover {
+  background: linear-gradient(135deg, rgba(250,172,224,1) 0%, rgba(0,238,247,1) 100%);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.review-nav-button:active {
+  transform: translateY(-50%) scale(0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-nav-button.prev {
+  left: 20px;
+}
+
+.review-nav-button.next {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .review-nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .review-nav-button.prev {
+    left: 10px;
+  }
+
+  .review-nav-button.next {
+    right: 10px;
+  }
 }

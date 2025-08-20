@@ -52,63 +52,65 @@ function toggleReview(reviewId) {
   }
 }
 
-// Drag to scroll functionality for reviews and seamless loop
+// Reviews carousel functionality
 document.addEventListener('DOMContentLoaded', () => {
-  // Drag to scroll for #reviews
-  const slider = document.querySelector('#reviews');
-  if (slider) {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+  const container = document.querySelector('#reviews-container');
+  const reviews = document.querySelectorAll('#reviews .main-preview');
+  let currentIndex = 0;
+  let autoPlayInterval;
 
-    slider.addEventListener('mousedown', (e) => {
-      isDown = true;
-      slider.style.cursor = 'grabbing';
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-    });
+  // Add navigation buttons
+  const reviewsSection = document.querySelector('#reviews');
+  reviewsSection.insertAdjacentHTML('beforeend', `
+    <button class="review-nav-button prev" onclick="previousReview()">❮</button>
+    <button class="review-nav-button next" onclick="nextReview()">❯</button>
+  `);
 
-    slider.addEventListener('mouseleave', () => {
-      isDown = false;
-      slider.style.cursor = 'grab';
-    });
+  // Initialize first review
+  reviews[currentIndex].classList.add('active');
 
-    slider.addEventListener('mouseup', () => {
-      isDown = false;
-      slider.style.cursor = 'grab';
-    });
-
-    slider.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 2;
-      slider.scrollLeft = scrollLeft - walk;
-    });
-  }
-
-  // Seamless loop for #reviews-container
-  const reviewsContainer = document.querySelector('#reviews-container');
-  if (reviewsContainer) {
-    const originalReviews = document.querySelectorAll('#reviews-container .main-preview');
+  function showReview(index) {
+    reviews.forEach(review => review.classList.remove('active'));
+    reviews[index].classList.add('active');
     
-    // Clone reviews for seamless loop
-    originalReviews.forEach(review => {
-      const clone = review.cloneNode(true);
-      reviewsContainer.appendChild(clone);
-    });
-
-    // Pause animation on user interaction
-    reviewsContainer.addEventListener('mousedown', () => {
-      reviewsContainer.style.animationPlayState = 'paused';
-    });
-
-    reviewsContainer.addEventListener('mouseup', () => {
-      reviewsContainer.style.animationPlayState = 'running';
-    });
-
-    reviewsContainer.addEventListener('mouseleave', () => {
-      reviewsContainer.style.animationPlayState = 'running';
-    });
+    // Calculate offset based on screen width
+    let reviewWidth = 400;
+    let gap = 60;
+    
+    if (window.innerWidth <= 1024) {
+      reviewWidth = 350;
+      gap = 50;
+    }
+    if (window.innerWidth <= 768) {
+      reviewWidth = 300;
+      gap = 40;
+    }
+    if (window.innerWidth <= 480) {
+      reviewWidth = 280;
+      gap = 30;
+    }
+    
+    const offset = -index * (reviewWidth + gap);
+    container.style.transform = `translateX(${offset}px)`;
   }
+
+  window.nextReview = () => {
+    currentIndex = (currentIndex + 1) % reviews.length;
+    showReview(currentIndex);
+    resetAutoPlay();
+  };
+
+  window.previousReview = () => {
+    currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+    showReview(currentIndex);
+    resetAutoPlay();
+  };
+
+  function resetAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(() => nextReview(), 5000);
+  }
+
+  // Start autoplay
+  resetAutoPlay();
 });
