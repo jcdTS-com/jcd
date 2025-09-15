@@ -11,12 +11,12 @@
   justify-items: center;
   display: inline-block;
   position: center;
-  width: 500px;
+  width: 400px; /* Reduced from 500px */
   background: rgba(100, 246, 148, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px; /* Slightly reduced padding */
   box-shadow: 
     0 8px 32px 0 rgba(100, 246, 148, 0.15),
     inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -70,8 +70,33 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   justify-items: center;
-  column-gap: 20px;
+  column-gap: 30px;  /* Increased from 20px to give more spacing between narrower columns */
   row-gap: 40px;
+}
+
+/* Responsive breakpoints for about section */
+@media (max-width: 1530px) {
+  .about-info {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-info {
+    width: 225px;
+  }
+  .about-grid {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-info {
+    width: 200px;
+  }
+  .about-grid {
+    column-gap: 15px;
+  }
 }
 
 .about {
