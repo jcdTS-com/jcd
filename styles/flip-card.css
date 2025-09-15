@@ -53,7 +53,6 @@
 .profile-back {
   background: linear-gradient(135deg, rgba(250,172,224,0.95) 0%, rgba(174, 252, 255, 0.95) 100%);
   transform: rotateY(180deg);
-  
   text-align: center;
   overflow: auto;
   font-size: 0.9em;  /* Slightly smaller text to fit better */
@@ -119,6 +118,13 @@
   .profile-container {
     width: 200px;
     height: 200px;
+  }
+  .profile-text {
+    font-size: 10px;
+  }
+  .profile-back {
+    width: 130%;
+    height: 130%;
   }
 }
 
