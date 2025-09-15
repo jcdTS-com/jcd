@@ -67,7 +67,7 @@
 
 .review-button {
   font-family: 'Archivo Black', sans-serif;
-  background: linear-gradient(135deg, rgba(250,172,224,0.8) 0%, rgba(0,238,247,0.8) 100%);
+  background: linear-gradient(135deg, rgba(250,172,224,0.8) 0%, rgba(127, 251, 255, 0.8) 100%);
   color: rgb(255, 255, 255);
   text-shadow: 0 1px 2px rgba(255, 0, 0, 0.25);
   border: none;
