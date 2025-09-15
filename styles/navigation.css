@@ -71,16 +71,18 @@
 @media (max-width: 676px) {
   .bottom-nav {
     width: auto;
-    min-width: 300px;
-    max-width: 95%;
-    bottom: 35px;  /* Increased from 20px */
+    min-width: 280px;  /* Reduced from 300px */
+    max-width: 90%;    /* Reduced from 95% */
+    bottom: 35px;
+    padding: 0 5px;    /* Added small padding */
   }
 
   .nav-button {
     font-size: 12px;
-    padding: 12px 12px;
+    padding: 10px 8px;  /* Reduced padding */
     flex: 1;
     text-align: center;
+    letter-spacing: -0.3px;  /* Slightly tighter letter spacing */
   }
 
   .nav-button:not(:last-child)::after {
@@ -90,18 +92,27 @@
 
 @media (max-width: 480px) {
   .bottom-nav {
-    bottom: 45px;  /* Even higher on smaller screens */
+    bottom: 45px;
+    min-width: 260px;  /* Even smaller min-width */
+    max-width: 85%;    /* Even smaller max-width */
+  }
+
+  .nav-button {
+    font-size: 11px;    /* Slightly smaller font */
+    padding: 10px 6px;  /* Further reduced padding */
   }
 }
 
 @media (max-width: 360px) {
   .bottom-nav {
-    min-width: 280px;
-    bottom: 50px;  /* Highest position on very small screens */
+    min-width: 240px;   /* Smallest min-width */
+    max-width: 80%;     /* Smallest max-width */
+    bottom: 50px;
+    padding: 0 3px;     /* Smaller padding */
   }
 
   .nav-button {
-    font-size: 11px;
-    padding: 10px 8px;
+    padding: 10px 4px;  /* Minimal padding */
+    font-size: 10px;    /* Smallest font size while staying readable */
   }
 }
