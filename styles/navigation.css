@@ -73,6 +73,7 @@
     width: auto;
     min-width: 300px;
     max-width: 95%;
+    bottom: 35px;  /* Increased from 20px */
   }
 
   .nav-button {
@@ -87,9 +88,16 @@
   }
 }
 
+@media (max-width: 480px) {
+  .bottom-nav {
+    bottom: 45px;  /* Even higher on smaller screens */
+  }
+}
+
 @media (max-width: 360px) {
   .bottom-nav {
     min-width: 280px;
+    bottom: 50px;  /* Highest position on very small screens */
   }
 
   .nav-button {

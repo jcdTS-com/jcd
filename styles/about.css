@@ -12,6 +12,22 @@
   display: inline-block;
   position: center;
   width: 500px;
+  background: rgba(100, 246, 148, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 
+    0 8px 32px 0 rgba(100, 246, 148, 0.15),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 12px 40px 0 rgba(100, 246, 148, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .about-title {
@@ -21,14 +37,17 @@
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 12px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .about-subtext{
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: white;
   margin-bottom: 12px;
   line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .about-subtext a {
@@ -56,12 +75,13 @@
 }
 
 .about {
-  color: rgb(0, 0, 128);	
+  color: rgb(255, 255, 255);	
   text-align: center;
   font-size: 35px;
   font-weight: 1000;
   line-height: 1.4;
   margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(255, 0, 212, 0.2);
 }
 
 .profile-container {
