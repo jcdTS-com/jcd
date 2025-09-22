@@ -2,7 +2,7 @@
   justify-items: center;
   display: inline-block;
   position: center;
-  width: 500px;
+  width: 475px; /* Reduced from 500px, make smaller when adding more reviews */
   padding: 25px;
 }
 
@@ -13,7 +13,7 @@
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(202, 45, 81, 0.1);
-  padding: 25px 25px;  /* Explicit padding for better responsive control */
+  padding: 20px 25px;  /* Explicit padding for better responsive control */
 }
 
 /* Responsive padding adjustments */

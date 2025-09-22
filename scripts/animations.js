@@ -26,7 +26,8 @@ function toggleFlip() {
 
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
-  const offset = 80; // Adjust if needed
+  // Special offset for reviews section to prevent title cutoff
+  const offset = sectionId === 'reviews' ? 200 : 50;
   const elementPosition = element.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - offset;
 

@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="styles/flip-card.css">
     <link rel="stylesheet" href="styles/subjects.css">
     <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/copy-animation.css">
+    <link rel="stylesheet" href="styles/nav-emoji-pop.css">
   </head>
 
 
@@ -44,8 +46,8 @@
 
     <main>
       <!-- Subjects section -->
-      <section id="subjects" class="single-column-section">
-        <div class="subject-container fade-in stagger-item">
+      <section id="subjects" class="single-column-section fade-in stagger-item">
+        <div class="subject-container">
           <div class="subject-content">
             <p class="main-title">
               NAPLAN & ICAS Review
@@ -60,7 +62,7 @@
           </div>
         </div>
 
-        <div class="subject-container fade-in stagger-item">
+        <div class="subject-container">
           <div class="subject-image">
             <img src="thumbnails/readws.jpg" alt="Reading, Spelling, & Writing">
           </div>
@@ -75,7 +77,7 @@
           </div>
         </div>
 
-        <div class="subject-container fade-in stagger-item">
+        <div class="subject-container">
           <div class="subject-content">
             <p class="main-title">
               STEM & Accounting
@@ -92,7 +94,7 @@
       </section>
 
       <!-- Vision/Mission/Goal section -->
-      <section class="single-column-section">
+      <section id="background" class="single-column-section">
         <div class="vision-container">
           <p class="main-title">
             VISION
@@ -122,7 +124,7 @@
       </section>
 
       <!-- row 3 -->
-      <section id="background" class="about-grid">
+      <section class="about-grid">
         <div>
           <div class="about-info-grid">
             <div class="about-info">
@@ -160,9 +162,10 @@
                 Licensed Professional Teacher <br>
                 Master of Professional Accounting <br>
                 Chartered Accountant <br>
-                <!-- Diploma of Early Childhood Education <br> <br>
-                - Tutor 2 - <br> 
-                Computer Engineer -->
+                Diploma of Early Childhood Education 
+                <br> <br>
+                <!-- - Tutor 2 - <br>  -->
+                Computer Engineer
             </div>
           </div>
         </div>
@@ -292,6 +295,20 @@
             </div>
           </div>
 
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext"> 
+                Having teacher Jan as my tutor really helped me not just in my academics, but also helped me to be the independent and responsible person I am today. She makes studying and doing school works less tiring and boring. In my three years of having teacher Jan, she taught me vital study skills like time management and different strategies on how I study the content for my future exams, which I also apply in the present. That's why I'm really thankful to my mama for choosing teacher Jan to be my teacher because not only did I gain learnings, but I also gained fun memories and family.
+              </p>
+              <p class="reviews-title"> 
+                - Riza Dianne
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -328,43 +345,32 @@
         </div>
       </section>
 
-      <!-- social media --> <!-- row 7 -->
-      <section id="inquire" class="about-grid">
-        <div></div>
-        <div class="about-info-grid">
-          <div class="about-info">
-            <p class="about">Connect With Us</p>
-            <div class="fb-container">
-              <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
-                <img class="fb-icon" src="icons/fb.svg">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </section>
-
       <!-- location/hours/contact section -->
-      <section class="about-grid fade-in stagger-item">
+      <section id="inquire" class="about-grid fade-in stagger-item">
         <div>
           <div class="about-info-grid">
             <div class="about-info">
               <p class="about">
-                Location
+                Contact
               </p>
               <p class="about-title">
-                Onsite
+                Email
               </p>
               <p class="about-subtext">
-                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
-                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
-                </a>
+                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
+                  jcdtutorialservices@gmail.com
+                </button>
               </p>
               <p class="about-title">
-                Online
+                Message | Call
               </p>
-              <p class="about-subtext">
-                Worldwide - English
+              <p class="about-subtext phone-numbers">
+                <button class="copy-button" onclick="copyToClipboard('0410442716')">
+                  0410442716
+                </button>
+                <button class="copy-button" onclick="copyToClipboard('0499296726')">
+                  0499296726
+                </button>
               </p>
             </div>
           </div>
@@ -396,41 +402,55 @@
           <div class="about-info-grid">
             <div class="about-info">
               <p class="about">
-                Contact
+                Location
               </p>
               <p class="about-title">
-                Email
+                Onsite
               </p>
               <p class="about-subtext">
-                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
-                  jcdtutorialservices@gmail.com
-                </button>
+                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
+                </a>
               </p>
               <p class="about-title">
-                Message | Call
+                Online
               </p>
-              <p class="about-subtext phone-numbers">
-                <button class="copy-button" onclick="copyToClipboard('0410442716')">
-                  0410442716
-                </button>
-                <button class="copy-button" onclick="copyToClipboard('0499296726')">
-                  0499296726
-                </button>
+              <p class="about-subtext">
+                Worldwide - English
               </p>
             </div>
           </div>
         </div>
+
+      </section>
+
+      <!-- social media --> <!-- row 7 -->
+      <section class="about-grid">
+        <div></div>
+        <div class="about-info-grid">
+          <div class="about-info">
+            <p class="about">Connect With Us</p>
+            <div class="fb-container">
+              <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
+                <img class="fb-icon" src="icons/fb.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div></div>
       </section>
 
       <div class="fb-post-container">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid0u9ztq8fAYDK9ap2sRGmhFppa6Xva544Jf4V5QzuE2xHVRuzQKV3E5MuQwJstg6L4l&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02CiHZidMi1NkwqTPdvyvPHXiLRhve44ATCZgkGFhphevn1zgwSbQcCYf3xJbqhgftl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02vhd3oAbyTjWV6jYVnqjwAAqnQgCF7Dv6LVhvibaVLHb6X7mBj8WsqastxFmVFEtzl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02MXUjBb4mSyH371WGbQaomroJ83Y8b7TfMpmzECCz3K5Ad46gM48rEvnARFWDzakQl&show_text=true&width=500" width="500" height="590" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02sde4HHANzFx76C9f7mZVcXcdz8icyRWqQfPPczaDP96SCfwMvxkeTkPmh7Po5aDKl&show_text=true&width=500" width="500" height="635" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
 
       <nav class="bottom-nav">
         <button class="nav-button" onclick="scrollToSection('subjects')">📚<span>Subjects</span></button>
-        <button class="nav-button" onclick="scrollToSection('background')">📜<span>Overview</span></button>
+        <button class="nav-button" onclick="scrollToSection('background')">📜<span>Overview</span></button> <!-- section id="background" -->
         <button class="nav-button" onclick="scrollToSection('reviews')">⭐<span>Reviews</span></button>
         <button class="nav-button" onclick="scrollToSection('inquire')">📧<span>Inquire</span></button>
       </nav>
@@ -439,5 +459,6 @@
     <script src="scripts/scroll-shadow.js"></script>
     <script src="scripts/animations.js"></script>
     <script src="scripts/copy-to-clipboard.js"></script>
+    <script src="scripts/nav-emoji-pop.js"></script>
   </body>
 </html>
