@@ -4,7 +4,7 @@
     pointer-events: none;
     z-index: 9998;
     font-size: 40px; /* Larger size for just the emoji */
-    animation: emoji-pop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: emoji-pop 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     will-change: transform, opacity;
 }
 
@@ -14,7 +14,7 @@
         opacity: 0;
     }
     20% {
-        transform: translate(-50%, -50%) scale(1.2);
+        transform: translate(-50%, -50%) scale(1.5);
         opacity: 1;
     }
     60% {
