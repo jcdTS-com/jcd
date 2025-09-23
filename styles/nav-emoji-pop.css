@@ -3,7 +3,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 9998;
-    font-size: 32px; /* Larger size for just the emoji */
+    font-size: 40px; /* Larger size for just the emoji */
     animation: emoji-pop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     will-change: transform, opacity;
 }
@@ -22,7 +22,7 @@
         opacity: 1;
     }
     100% {
-        transform: translate(-50%, -50%) scale(1.5);
+        transform: translate(-50%, -50%) scale(2);
         opacity: 0;
     }
 }
@@ -30,6 +30,6 @@
 /* Adjust size for mobile screens */
 @media (max-width: 768px) {
     .nav-emoji-pop {
-        font-size: 16px;
+        font-size: 40px;
     }
 }

@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) { /* Changed from 1200px to 1230px */
   .about-info {
     width: 300px;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) { /* Changed from 1024px to 1160px */
   .about-info {
     width: 250px;
   }
