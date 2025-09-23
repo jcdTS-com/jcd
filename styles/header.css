@@ -61,6 +61,7 @@
 .fb-icon {
   border-radius: 75px;
   height: 75px;
+  margin-left: 25px;
   transition: all 0.3s ease;
 }
 
@@ -125,7 +126,7 @@
 
   .fb-icon {
     height: 50px;
-    margin: 0;
+    margin: 25px;
   }
 }
 

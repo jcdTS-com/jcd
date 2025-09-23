@@ -279,3 +279,32 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 }
+
+.fb-post-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.fb-post-container iframe {
+  max-width: 100%;
+  margin: 0;
+  height: 800px;  /* Set fixed height for all iframes */
+}
+
+@media (max-width: 1050px) {
+  .fb-post-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .fb-post-container iframe {
+    width: 100%;
+  }
+}
