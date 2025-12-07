@@ -5,7 +5,7 @@ p {
 }
 
 .main-title, .about {
-  font-family: 'Archivo Black', sans-serif;
+  /* font-family: 'Archivo Black', sans-serif; */
 }
 
 .main-subtext, .about-title, .about-subtext {
@@ -21,7 +21,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   /* background-color: rgb(250, 172, 224); */
-  background: linear-gradient(0deg, rgb(127.5, 251, 255) 0%, rgba(250,172,224,1) 88%);
+  background: linear-gradient(0deg, rgb(164, 216, 216) 0%, rgba(250,172,224,1) 88%);
   overflow-x: hidden;
   max-width: 100%;
 }
