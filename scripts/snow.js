@@ -15,6 +15,24 @@ function ensureSnowPileContainer() {
   return document.getElementById('snow-pile');
 }
 
+// Create falling snowflake container if it doesn't exist
+function ensureSnowfallContainer() {
+  if (!document.getElementById('snowfall-container')) {
+    const container = document.createElement('div');
+    container.id = 'snowfall-container';
+    container.style.position = 'fixed';
+    container.style.top = '0';
+    container.style.left = '0';
+    container.style.width = '100%';
+    container.style.height = '100vh';
+    container.style.pointerEvents = 'none';
+    container.style.zIndex = '500';
+    container.style.overflow = 'hidden';
+    document.documentElement.appendChild(container);
+  }
+  return document.getElementById('snowfall-container');
+}
+
 function addToSnowPile() {
   if (snowPileCount >= maxSnowPileFlakes) return;
   
@@ -72,8 +90,8 @@ function createSnowflake() {
   const randomX = Math.random() * window.innerWidth;
   snowflake.style.left = randomX + 'px';
   
-  // Start from top of the entire document
-  snowflake.style.top = window.scrollY - 10 + 'px';
+  // Start from top of viewport (not document)
+  snowflake.style.top = '-10px';
   
   // Random animation duration (8-15 seconds) - slower fall
   const duration = Math.random() * 7 + 8;
@@ -95,7 +113,9 @@ function createSnowflake() {
   const delay = Math.random() * 0.5;
   snowflake.style.animationDelay = delay + 's';
   
-  document.body.appendChild(snowflake);
+  // Add to fixed container instead of body
+  const container = ensureSnowfallContainer();
+  container.appendChild(snowflake);
   
   // Remove snowflake after animation completes and add to pile
   setTimeout(() => {

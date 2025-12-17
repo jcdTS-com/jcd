@@ -1,7 +1,7 @@
 .bottom-nav {
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 50vw;
   transform: translateX(-50%);
   /*default theme*/
   background: rgba(127, 251, 255, 0.85);
@@ -11,7 +11,7 @@
   display: flex;
   padding: 0;  /* Remove padding from container */
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  z-index: 1000;
+  z-index: 1001;
   border-radius: 50px;
   width: fit-content;
   overflow: hidden;  /* Contain hover effects */
@@ -88,6 +88,8 @@
     max-width: 90%;
     bottom: 35px;
     padding: 0 5px;
+    left: 50vw !important;
+    transform: translateX(-50%) !important;
   }
 
   .nav-button {
@@ -113,13 +115,15 @@
   }
 }
 
+
 @media (max-width: 480px) {
   .bottom-nav {
     bottom: 45px;
     min-width: 240px;
     max-width: 85%;
+    left: 50vw !important;
+    transform: translateX(-50%) !important;
   }
-
   .nav-button {
     font-size: 16px;  /* Slightly smaller emoji but still big */
     padding: 8px 8px;
