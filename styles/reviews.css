@@ -44,6 +44,8 @@
   margin-bottom: 15px;
   /* font-family: 'Archivo Black', sans-serif; */
   text-shadow: 0 2px 4px rgba(0, 225, 255, 0.2);
+  /*christmas theme*/
+  text-shadow: 0 2px 4px rgb(255, 0, 0);
 }
 
 .reviews-title {
@@ -53,7 +55,7 @@
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 15px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgb(255, 238, 0);
 }
 
 .reviews-subtext {
