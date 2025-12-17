@@ -38,7 +38,10 @@
   line-height: 1.4;
   margin-bottom: 15px;
   /* font-family: 'Archivo Black', sans-serif; */
+  /*default theme*/
   text-shadow: 0 2px 4px rgba(6, 154, 190, 0.5);
+  /*christmas theme*/
+  text-shadow: 0 2px 4px rgb(255, 0, 0);
 }
 
 .right-section {

@@ -3,7 +3,10 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  /*default theme*/
   background: rgba(127, 251, 255, 0.85);
+  /*christmas theme*/
+  background: rgba(241, 126, 120, 0.85);
   backdrop-filter: blur(10px);
   display: flex;
   padding: 0;  /* Remove padding from container */
@@ -23,7 +26,10 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   font-weight: 600;
+  /*default theme*/
   color: rgb(0, 0, 128);
+  /*christmas theme*/
+  color: rgb(255, 255, 255);
   text-shadow: 0 2px 4px rgba(13, 120, 134, 0.5);
   white-space: nowrap;
   position: relative;

@@ -1,7 +1,7 @@
 function createSparkle(x, y, angle, delay) {
     const sparkle = document.createElement('div');
     sparkle.className = 'sparkle';
-    sparkle.innerHTML = '✏️';
+    sparkle.innerHTML = '❄️'; //✏️
     sparkle.style.left = x + 'px';
     sparkle.style.top = y + 'px';
     // Add random rotation

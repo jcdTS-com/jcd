@@ -21,7 +21,10 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   /* background-color: rgb(250, 172, 224); */
-  background: linear-gradient(0deg, rgb(164, 216, 216) 0%, rgba(250,172,224,1) 88%);
+  /*default theme*/
+  background: linear-gradient(0deg, rgb(164, 216, 216) 0%, rgba(255,209,220,1) 88%);
+  /*christmas theme*/
+  background: linear-gradient(0deg, rgb(255,105,97) 0%, rgba(119,221,119,1) 50%); 
   overflow-x: hidden;
   max-width: 100%;
 }
