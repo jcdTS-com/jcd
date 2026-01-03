@@ -59,7 +59,7 @@
   /*default theme*/
   text-shadow: 0 2px 4px rgba(255, 0, 212, 0.2);
   /*christmas theme*/
-  text-shadow: 0 2px 4px rgb(255, 0, 0);
+  /* text-shadow: 0 2px 4px rgb(255, 0, 0); */
 }
 
 .main-subtext{

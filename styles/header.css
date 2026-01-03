@@ -41,7 +41,7 @@
   /*default theme*/
   text-shadow: 0 2px 4px rgba(6, 154, 190, 0.5);
   /*christmas theme*/
-  text-shadow: 0 2px 4px rgb(255, 0, 0);
+  /* text-shadow: 0 2px 4px rgb(255, 0, 0); */
 }
 
 .right-section {

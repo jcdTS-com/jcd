@@ -20,12 +20,12 @@
   );
 
   /*christmas theme*/
-  background: linear-gradient(to bottom, 
+  /* background: linear-gradient(to bottom, 
     rgba(119,221,119, 0.95) 0%,
     rgba(119,221,119, 0.6) 30%,
     rgba(119,221,119, 0.2) 70%,
     transparent 100%
-  );
+  ); */
 }
 
 .scroll-shadow-bottom {
@@ -39,12 +39,12 @@
   );
 
   /*christmas theme*/
-  background: linear-gradient(to top, 
+  /* background: linear-gradient(to top, 
     rgba(255,105,97, 0.95) 0%,
     rgba(255,105,97, 0.6) 30%,
     rgba(255,105,97, 0.2) 70%,
     transparent 100%
-  );
+  ); */
 }
 
 .show-shadow {
