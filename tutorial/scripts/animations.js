@@ -125,6 +125,6 @@ function goBack() {
     overlay.classList.add('slide-from-top');
     
     setTimeout(() => {
-        window.location.href = '../index.html';
+        window.location.href = '../';
     }, 800);
 }
