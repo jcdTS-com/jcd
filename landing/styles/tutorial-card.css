@@ -1,0 +1,106 @@
+@keyframes pulse {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icon {
+    animation: pulse 2s ease-in-out infinite;
+    max-width: 50%;
+    height: auto;
+    margin: -50px;
+    z-index: 1;
+    transition: max-width 0.3s ease;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: rgb(132, 245, 245);
+        box-shadow: 0 0 40px rgb(164, 216, 216), 
+                    0 0 60px rgb(164, 216, 216),
+                    0 10px 40px rgb(164, 216, 216);
+    }
+    50% {
+        background: rgb(209, 112, 201);
+        box-shadow: 0 0 40px rgb(255,209,220), 
+                    0 0 60px rgb(255,209,220),
+                    0 10px 40px rgb(255,209,220);
+    }
+    100% {
+        background: rgb(132, 245, 245);
+        box-shadow: 0 0 40px rgb(164, 216, 216), 
+                    0 0 60px rgb(164, 216, 216),
+                    0 10px 40px rgb(164, 216, 216);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.tutorial-card {
+    /* animation: gradientShift 7.5s ease infinite; */
+    animation: slideInFromLeft 1s ease-out;
+    background: rgb(255,209,220);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 40px rgb(116, 255, 255), 
+                0 0 60px rgb(116, 255, 255),
+                0 10px 40px rgb(116, 255, 255);
+
+    .icon {
+        animation: none;
+    }
+}
+
+.tutorial-card .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-card .service-title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(116, 255, 255);
+    transition: all 0.25s ease;
+}
+
+.tutorial-card:hover .service-title {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+.tutorial-card .service-description {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: color 0.25s ease, font-weight 0.25s ease;
+    text-shadow: 0 0 20px rgb(116, 255, 255);
+}
+
+.tutorial-card:hover .service-description {
+    font-weight: lighter;
+    text-shadow: 0 0 20px rgb(116, 255, 255);
+}

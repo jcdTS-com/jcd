@@ -1,518 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<!-- NOTE
-Christmas Themes on:
-- icons
-- pictures
-- copy-to-clipboard.js
-- about.css
-- copy-animation.css
-- flip-card.css
-- general.css
-- header.css
-- main.css
-- navigation.css
-- reviews.css
-- scroll-shadow.css
--->
-
-  <head>
-    <title>JCD Tutorial Services</title>
-    <link rel="icon" type="image/x-icon" href="icons/jcd.png"> <!-- christmasicon-->
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>JCD Timely Services</title>
+    <link rel="icon" type="image/x-icon" href="landing/logos/jcdBig.png">
+    <link rel="stylesheet" href="./landing/styles/landing.css">
+    <link rel="stylesheet" href="./landing/styles/tutorial-card.css">
+    <link rel="stylesheet" href="./landing/styles/janloc-card.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/scroll-shadow.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/flip-card.css">
-    <link rel="stylesheet" href="styles/subjects.css">
-    <link rel="stylesheet" href="styles/reviews.css">
-    <link rel="stylesheet" href="styles/copy-animation.css">
-    <link rel="stylesheet" href="styles/nav-emoji-pop.css">
-    <!-- SNOW EFFECT - Comment out to disable snow -->
-    <link rel="stylesheet" href="styles/snow.css">
-  </head>
+</head>
 
-
-  <body>
-    <div class="scroll-shadow scroll-shadow-top"></div>
-    <div class="scroll-shadow scroll-shadow-bottom"></div>
-    
-    <header class="header">
-      <div class="left-section">
-        <img class="jcd-big" src="icons/jcd-final.png"> <!-- christmas-->
-      </div>
-      <div class="middle-section">
-        <p class="offer">
-          Private academic tutoring from primary to high school <br>
-          &nbsp &nbsp &nbsp Onsite | Online <br>
-          Individual | Group
-        </p>
-      </div>
-    </header>
-
-    <main>
-      <!-- Subjects section -->
-      <section id="subjects" class="single-column-section fade-in stagger-item">
-        <div class="subject-container">
-          <div class="subject-content">
-            <p class="main-title">
-              NAPLAN & ICAS Review
-            </p>
-            <p class="main-subtext">
-              NAPLAN review for students in years 3, 5, 7, and 9<br>
-              ICAS review for students who will take the ICAS test
-            </p>
-          </div>
-          <div class="subject-image">
-            <img src="thumbnails/naplanicas.jpg" alt="NAPLAN & ICAS">
-          </div>
-        </div>
-
-        <div class="subject-container">
-          <div class="subject-image">
-            <img src="thumbnails/readws.jpg" alt="Reading, Writing, & Spelling">
-          </div>
-          <div class="subject-content">
-            <p class="main-title">
-              Reading, Spelling, & Writing
-            </p>
-            <p class="main-subtext">
-              We teach children from 4 years old to learn<br>
-              reading, spelling, and writing
-            </p>
-          </div>
-        </div>
-
-        <div class="subject-container">
-          <div class="subject-content">
-            <p class="main-title">
-              Mathematics
-            </p>
-            <p class="main-subtext">
-              Mathematics tutoring customized to each student's curriculum and pace, 
-              from building primary school foundations to mastering high school 
-              algebra, <br> geometry, trigonometry, and exam preparation. 
-            </p>
-          </div>
-          <div class="subject-image">
-            <img src="thumbnails/maths.jpg" alt="Maths & Accounting">
-          </div>
-        </div>
-
-        <div class="subject-container">
-          <div class="subject-image">
-            <img src="thumbnails/accounting.jpg" alt="Maths & Accounting">
-          </div>
-          <div class="subject-content">
-            <p class="main-title">
-              Accounting
-            </p>
-            <p class="main-subtext">
-              Accounting tutoring for Senior High School students, focused on building strong understanding,<br>
-              confidence, and exam readiness.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- Vision/Mission/Goal section -->
-      <section id="background" class="single-column-section">
-        <div class="vision-container">
-          <p class="about">
-            VISION
-          </p>
-          <p class="main-subtext">
-            To be a premier tutorial center that values student-centered and interactive learning.
-          </p>
-        </div>
-
-        <div class="vision-container">
-          <p class="about">
-            MISSION
-          </p>
-          <p class="main-subtext">
-            To help learners develop a study habit.
-          </p>
-        </div>
-
-        <div class="vision-container">
-          <p class="about">
-            GOAL
-          </p>
-          <p class="main-subtext">
-            To empower learners in developing their <span class="acronym">A</span>bility to <span class="acronym">C</span>omprehend, <span class="acronym">H</span>olistic <span class="acronym">I</span>ntelligence, <span class="acronym">E</span>motional <span class="acronym">V</span>alue and <span class="acronym">E</span>xcellence - <span class="acronym">ACHIEVE</span>
-          </p>
-        </div>
-      </section>
-
-      <!-- row 3 -->
-      <section class="about-grid">
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Founder, CEO
-              </p>
-              <p class="about-subtext">
-                Janice C. Dapitan, CA, MPA, LPT <br>
-                "Jan-Jan"
-              </p>
-              <div class="profile-container" onclick="toggleFlip()">
-                <div class="profile-card">
-                  <div class="profile-front">
-                    <img class="profile-image" src="pictures/pfp.jpg"> <!-- christmas-->
-                  </div>
-                  <div class="profile-back">
-                    <div class="profile-text">
-                      Jan-Jan is an Accountant <br> by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
-                    </div>
-                  </div>
+<body>
+    <div class="container">
+        <img src="landing/logos/jcdLong.png" alt="JCD Timely Services" class="logo">
+        
+        <div class="services">
+            <a href="./tutorial" class="tutorial-card">
+                <div class="service-icon">
+                    <img src="tutorial/icons/jcd-final.png" class="icon">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <h2 class="service-title">Tutorial Services</h2>
+                <p class="service-description">Private tutoring tailored to your learning needs</p>
+            </a>
 
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Tutors' Qualification
-              </p>
-              <p class="about-subtext">
-                <!-- - Tutor 1 - <br> -->
-                Licensed Professional Teacher <br>
-                Master of Professional Accounting <br>
-                Chartered Accountant <br>
-                Diploma of Early Childhood Education 
-                <br> <br>
-                <!-- - Tutor 2 - <br>  -->
-                Computer Engineer
-            </div>
-          </div>
+            <a href="./janloc" class="janloc-card">
+                <div class="service-icon"> 👀</div>
+                <h2 class="service-title">More Soon!</h2>
+                <p class="service-description">Stay Tuned 🫣</p>
+            </a>
+                <!-- <h2 class="service-title">Janloc</h2>
+                <p class="service-description">Sim Racing <br> Affiliate Links | Discounts Codes</p>
+            </a> -->
         </div>
+    </div>
 
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Business
-              </p>
-              <p class="about-subtext">
-                JCD began her tutorial service during the summer of 2002 in Cebu City. Starting with tutoring a single elementary pupil, her clientele grew to four and then expanded further. On July 21, 2015, JCD took the step to register her small business with the Department of Trade and Industry (DTI). After 16 years of home-based tutoring, JCD Tutorial Services transitioned to a public commercial enterprise, officially opening on July 8, 2018. At present, JCD is registered in Australia.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div id="transition-overlay" class="transition-overlay"></div>
 
-      <!-- row 4 -->
-      <section class="main-grid">
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-            </div>
-          </div>
-        </div>
+    <script>
+        document.querySelectorAll('.tutorial-card, .janloc-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                const overlay = document.getElementById('transition-overlay');
+                
+                // Get card's computed background color
+                const bgColor = window.getComputedStyle(this).backgroundColor || 'rgb(164, 216, 216)';
+                overlay.style.backgroundColor = bgColor;
+                
+                // Determine slide direction based on which card was clicked
+                if (this.classList.contains('tutorial-card')) {
+                    overlay.classList.add('slide-from-left');
+                } else if (this.classList.contains('janloc-card')) {
+                    overlay.classList.add('slide-from-right');
+                }
+                
+                // Navigate after animation completes
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 800);
+            });
+        });
+    </script>
     
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-              <p class="reviews-heading">
-                Reviews
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Reviews section -->
-      <section id="reviews">
-        <div id="reviews-container">
-
-          <div class="main-preview">
-            <!-- First review -->
-            <div class="reviews-info review-card">
-              <p class="reviews-title">&#11088 &#11088 &#11088 &#11088 &#11088</p>
-              <p class="reviews-subtext">
-                What I liked about my tutor Jan is that she treats me like a family member and teaches me like a parent would do. My academics are improving and she made me challenge myself into more complex questions during my times at the sessions. I would highly recommend her as an experienced teacher and she is a great example of how a tutor should deliver their service. She is perfect in tutoring which made me build up my resilience in my learning.
-              </p>
-              <p class="reviews-title">- Vidula Liyanage</p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <!-- First review -->
-            <div class="reviews-info review-card">
-              <p class="reviews-title">&#11088 &#11088 &#11088 &#11088 &#11088</p>
-              <p class="reviews-subtext">
-                Abrielle enjoys mathematics. She's confident in reading and she's trying her best in spelling. At young age, she was able to do all of these and we're very grateful to JCD Tutorial, especially to Teacher Jan for her patience and understanding. Thank you
-              </p>
-              <p class="reviews-title">- Kate Anzia</p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title">
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext">
-                JCD Tutorial is one of the best Teaching service in Orange. Jan is absolutely talented and wonderful. She helped My son with his writing skill improvement. I must say having Jan to help my son learn to write has been blessings. I am strongly recommended Her service with 10/10. Very reasonable price and So kind and innovative in terms of teaching. Thank you Jan.
-              </p>
-              <p class="reviews-title">
-                - Amit Patel
-              </p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext">
-                I recommend JCD Tutorial Services because it has a reasonable price, and the tutor focuses on helping her tutees improve their skills. She brings out the best in her students because she motivates them and is very patient when teaching them.
-              </p>
-              <p class="reviews-title"> 
-                - Mae Mendoza
-              </p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext"> 
-                I was mam janice student way back in high school she is a great teacher she brings out the best in her student my favorite subject was math i learned so many methods from her in solving math problems i totally recommend her as a very tutor if she could just be my teacher in high school then it would so be great
-              </p>
-              <p class="reviews-title"> 
-                - Elenito Palang Jr.
-              </p>
-            </div>
-          </div>
-  
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext"> 
-                For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it". God bless you always.
-              </p>
-              <p class="reviews-title"> 
-                - JC Princess
-              </p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext"> 
-                A place where you are treated like a family and at the same time, you are learning.
-              </p>
-              <p class="reviews-title"> 
-                - Dephren Jamdict
-              </p>
-            </div>
-          </div>
-
-          <div class="main-preview">
-            <div class="reviews-info review-card">
-              <p class="reviews-title"> 
-                &#11088 &#11088 &#11088 &#11088 &#11088
-              </p>
-              <p class="reviews-subtext"> 
-                Having teacher Jan as my tutor really helped me not just in my academics, but also helped me to be the independent and responsible person I am today. She makes studying and doing school works less tiring and boring. In my three years of having teacher Jan, she taught me vital study skills like time management and different strategies on how I study the content for my future exams, which I also apply in the present. That's why I'm really thankful to my mama for choosing teacher Jan to be my teacher because not only did I gain learnings, but I also gained fun memories and family.
-              </p>
-              <p class="reviews-title"> 
-                - Riza Dianne
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      
-
-      <!-- row 6 -->
-      <section class="main-grid">
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-            </div>
-          </div>
-        </div>
-    
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-              <p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6MG32I2N3YDxB4xWGmrNjTeYMhEXIsUB-3om1UeXOrvPJpQ/viewform?usp=sf_link" target="_blank">
-                  <button class="review-button">
-                    Write Review
-                  </button>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="reviews-preview">
-          <div class="reviews-info-grid">
-            <div class="reviews-info">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- location/hours/contact section -->
-      <section id="inquire" class="about-grid fade-in stagger-item">
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Contact
-              </p>
-              <p class="about-title">
-                Email
-              </p>
-              <p class="about-subtext">
-                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
-                  jcdtutorialservices@gmail.com
-                </button>
-              </p>
-              <p class="about-title">
-                Message | Call
-              </p>
-              <p class="about-subtext phone-numbers">
-                <button class="copy-button" onclick="copyToClipboard('0410442716')">
-                  0410442716
-                </button>
-                <button class="copy-button" onclick="copyToClipboard('0499296726')">
-                  0499296726
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Hours
-              </p>
-              <p class="about-title">
-                Monday - Friday (Online)
-              </p>
-              <p class="about-subtext">
-                6:30PM - 8:30PM
-              </p>
-              <p class="about-title">
-                Saturday (Onsite)
-              </p>
-              <p class="about-subtext">
-                8AM - 8PM
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="about-info-grid">
-            <div class="about-info">
-              <p class="about">
-                Location
-              </p>
-              <p class="about-title">
-                Onsite
-              </p>
-              <p class="about-subtext">
-                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
-                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
-                </a>
-              </p>
-              <p class="about-title">
-                Online
-              </p>
-              <p class="about-subtext">
-                Worldwide - English
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- social media --> <!-- row 7 -->
-      <section class="about-grid">
-        <div></div>
-        <div class="about-info-grid">
-          <div class="about-info">
-            <p class="about">Connect With Us</p>
-            <div class="fb-container">
-              <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
-                <img class="fb-icon" src="icons/fb.svg">
-              </a>
-              <a href="https://www.instagram.com/jcdtutorialservices" target="_blank">
-                <img class="fb-icon" src="icons/ig.svg">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </section>
-
-      <div class="fb-post-container">
-        <!-- <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DOdi3bsD-jT/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DOdi3bsD-jT/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DOdi3bsD-jT/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by JCD Tutorial Services (@jcdtutorialservices)</a></p></div></blockquote>
-        <script async src="//www.instagram.com/embed.js"></script> -->
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02eE164kCJJVP7hjhYCyA6dPkYDu2xz95YtaiGvLC6oV8XaHPegjQMm17zhKd1nTpBl&show_text=true&width=500" width="500" height="829" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid024GExVzwBqRnhnKtr9mmGZfHjG1nJgMiDCezNLqFHywAuvweKyytaUwc2d29r23ZQl&show_text=true&width=500" width="500" height="447" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02vhd3oAbyTjWV6jYVnqjwAAqnQgCF7Dv6LVhvibaVLHb6X7mBj8WsqastxFmVFEtzl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02CiHZidMi1NkwqTPdvyvPHXiLRhve44ATCZgkGFhphevn1zgwSbQcCYf3xJbqhgftl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid0u9ztq8fAYDK9ap2sRGmhFppa6Xva544Jf4V5QzuE2xHVRuzQKV3E5MuQwJstg6L4l&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02sde4HHANzFx76C9f7mZVcXcdz8icyRWqQfPPczaDP96SCfwMvxkeTkPmh7Po5aDKl&show_text=true&width=500" width="500" height="635" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNov.13.2002%2Fposts%2Fpfbid02MXUjBb4mSyH371WGbQaomroJ83Y8b7TfMpmzECCz3K5Ad46gM48rEvnARFWDzakQl&show_text=true&width=500" width="500" height="590" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <nav class="bottom-nav">
-        <button class="nav-button" onclick="scrollToSection('subjects')">📚<span>Subjects</span></button> <!--🎁-->
-        <button class="nav-button" onclick="scrollToSection('background')">📜<span>Overview</span></button> <!-- section id="background"  🎄-->
-        <button class="nav-button" onclick="scrollToSection('reviews')">⭐<span>Reviews</span></button> 
-        <button class="nav-button" onclick="scrollToSection('inquire')">📧<span>Inquire</span></button> <!--❄️-->
-      </nav>
-    </main>
-
-    <script src="scripts/scroll-shadow.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src="scripts/copy-to-clipboard.js"></script>
-    <script src="scripts/nav-emoji-pop.js"></script>
-    <!-- SNOW EFFECT - Comment out to disable snow -->
-    <!-- <script src="scripts/snow.js"></script> -->
-  </body>
+</body>
 </html>

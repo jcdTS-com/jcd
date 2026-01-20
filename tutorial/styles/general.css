@@ -1,0 +1,44 @@
+p {
+  font-family: Quicksand, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-title, .about {
+  /* font-family: 'Archivo Black', sans-serif; */
+}
+
+.main-subtext, .about-title, .about-subtext {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100%;
+  font-family: Roboto, Arial;
+  margin-top: 350px;  /* Adjusted from 375px */
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* background-color: rgb(250, 172, 224); */
+  /*default theme*/
+  background: linear-gradient(0deg, rgb(164, 216, 216) 0%, rgba(255,209,220,1) 88%);
+  /*christmas theme*/
+  /* background: linear-gradient(0deg, rgb(255,105,97) 0%, rgba(119,221,119,1) 50%);  */
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 676px) {
+  body {
+    margin-top: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  body {
+    margin-top: 0;
+    padding: 20px;
+  }
+}

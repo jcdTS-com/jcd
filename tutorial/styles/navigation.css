@@ -81,6 +81,60 @@
   margin-left: 4px;
 }
 
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: calc(50% + 280px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ededed;
+  border: 2px solid #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1002;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0; /* Start hidden */
+}
+
+.transition-overlay.slide-from-top {
+  animation: slideFromTop 0.8s ease-in-out forwards;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 676px) {
   .bottom-nav {
     width: auto;
@@ -113,6 +167,15 @@
   .nav-button:not(:last-child)::after {
     height: 45px;  /* Slightly increased for taller buttons due to larger emoji */
   }
+
+  .back-button {
+    bottom: 35px;
+    right: auto;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
 }
 
 
@@ -132,6 +195,14 @@
   .nav-button span {
     font-size: 10px;  /* Even smaller text */
   }
+
+  .back-button {
+    bottom: 45px;
+    left: 15px;
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -149,5 +220,13 @@
 
   .nav-button span {
     font-size: 9px;  /* Smallest text size while still being readable */
+  }
+
+  .back-button {
+    bottom: 50px;
+    left: 12px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 }

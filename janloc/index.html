@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UNDER CONSTRUCTION</title>
+    <link rel="icon" type="image/x-icon" href="janloc/logos/janloc.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../tutorial/styles/navigation.css">
+    <!-- <link rel="stylesheet" href="./landing/styles/landing.css">
+    <link rel="stylesheet" href="./landing/styles/tutorial-card.css">
+    <link rel="stylesheet" href="./landing/styles/janloc-card.css"> -->
+    <link rel="stylesheet" href="styles/header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+      <div class="left-section">
+        <!-- <img class="jcd-big" src="icons/jcd-final.png" onclick="scrollToFbPosts()"> -->
+      </div>
+      <div class="middle-section">
+        <p class="offer">
+          🚧 UNDER 🚧 <br/>
+          🏗️ CONSTRUCTION 🧱
+        </p>
+      </div>
+    </header>
+
+    <button class="back-button" onclick="goBack()">🔙</button>
+    <!-- <script src="../tutorial/scripts/animations.js"></script> -->
+
+    <div id="transition-overlay" class="transition-overlay"></div>
+
+    <script>
+        function goBack() {
+        const overlay = document.getElementById('transition-overlay');
+        overlay.classList.add('slide-from-top');
+        
+        setTimeout(() => {
+            window.location.href = '../index.html';
+        }, 800);
+    }  
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<!-- NOTE
+Christmas Themes on:
+- icons
+- pictures
+- copy-to-clipboard.js
+- about.css
+- copy-animation.css
+- flip-card.css
+- general.css
+- header.css
+- main.css
+- navigation.css
+- reviews.css
+- scroll-shadow.css
+-->
+
+  <head>
+    <title>JCD Tutorial Services</title>
+    <link rel="icon" type="image/x-icon" href="icons/jcd.png"> <!-- christmasicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/scroll-shadow.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/flip-card.css">
+    <link rel="stylesheet" href="styles/subjects.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/copy-animation.css">
+    <link rel="stylesheet" href="styles/nav-emoji-pop.css">
+    <link rel="stylesheet" href="styles/fbposts.css">
+    <!-- SNOW EFFECT - Comment out to disable snow -->
+    <link rel="stylesheet" href="styles/snow.css">
+  </head>
+
+
+  <body>
+    <div class="scroll-shadow scroll-shadow-top"></div>
+    <div class="scroll-shadow scroll-shadow-bottom"></div>
+    
+    <header class="header">
+      <div class="left-section">
+        <img class="jcd-big" src="icons/jcd-final.png" onclick="scrollToFbPosts()">
+      </div>
+      <div class="middle-section">
+        <p class="offer">
+          Private academic tutoring from primary to high school <br>
+          &nbsp &nbsp &nbsp Onsite | Online <br>
+          Individual | Group
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Subjects section -->
+      <section id="subjects" class="single-column-section fade-in stagger-item">
+        <div class="subject-container">
+          <div class="subject-content">
+            <p class="main-title">
+              NAPLAN & ICAS Review
+            </p>
+            <p class="main-subtext">
+              NAPLAN review for students in years 3, 5, 7, and 9<br>
+              ICAS review for students who will take the ICAS test
+            </p>
+          </div>
+          <div class="subject-image">
+            <img src="thumbnails/naplanicas.jpg" alt="NAPLAN & ICAS">
+          </div>
+        </div>
+
+        <div class="subject-container">
+          <div class="subject-image">
+            <img src="thumbnails/readws.jpg" alt="Reading, Writing, & Spelling">
+          </div>
+          <div class="subject-content">
+            <p class="main-title">
+              Reading, Spelling, & Writing
+            </p>
+            <p class="main-subtext">
+              We teach children from 4 years old to learn<br>
+              reading, spelling, and writing
+            </p>
+          </div>
+        </div>
+
+        <div class="subject-container">
+          <div class="subject-content">
+            <p class="main-title">
+              Mathematics
+            </p>
+            <p class="main-subtext">
+              Mathematics tutoring customized to each student's curriculum and pace, 
+              from building primary school foundations to mastering high school 
+              algebra, <br> geometry, trigonometry, and exam preparation. 
+            </p>
+          </div>
+          <div class="subject-image">
+            <img src="thumbnails/maths.jpg" alt="Maths & Accounting">
+          </div>
+        </div>
+
+        <div class="subject-container">
+          <div class="subject-image">
+            <img src="thumbnails/accounting.jpg" alt="Maths & Accounting">
+          </div>
+          <div class="subject-content">
+            <p class="main-title">
+              Accounting
+            </p>
+            <p class="main-subtext">
+              Accounting tutoring for Senior High School students, focused on building strong understanding,<br>
+              confidence, and exam readiness.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Vision/Mission/Goal section -->
+      <section id="background" class="single-column-section">
+        <div class="vision-container">
+          <p class="about">
+            VISION
+          </p>
+          <p class="main-subtext">
+            To be a premier tutorial center that values student-centered and interactive learning.
+          </p>
+        </div>
+
+        <div class="vision-container">
+          <p class="about">
+            MISSION
+          </p>
+          <p class="main-subtext">
+            To help learners develop a study habit.
+          </p>
+        </div>
+
+        <div class="vision-container">
+          <p class="about">
+            GOAL
+          </p>
+          <p class="main-subtext">
+            To empower learners in developing their <span class="acronym">A</span>bility to <span class="acronym">C</span>omprehend, <span class="acronym">H</span>olistic <span class="acronym">I</span>ntelligence, <span class="acronym">E</span>motional <span class="acronym">V</span>alue and <span class="acronym">E</span>xcellence - <span class="acronym">ACHIEVE</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- row 3 -->
+      <section class="about-grid">
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Founder, CEO
+              </p>
+              <p class="about-subtext">
+                Janice C. Dapitan, CA, MPA, LPT <br>
+                "Jan-Jan"
+              </p>
+              <div class="profile-container" onclick="toggleFlip()">
+                <div class="profile-card">
+                  <div class="profile-front">
+                    <img class="profile-image" src="pictures/pfp.jpg"> <!-- christmas-->
+                  </div>
+                  <div class="profile-back">
+                    <div class="profile-text">
+                      Jan-Jan is an Accountant <br> by profession, having graduated with a Bachelor of Science in Accountancy from the University of San Carlos. Driven by a desire to become a teacher, she pursued a second course, a Bachelor of Secondary Education (BSEd) major in Mathematics, and studied for a Master of Arts in Education majoring in Educational Management, both from Cebu Normal University. She became a Licensed Teacher, registering on November 13, 2002, after passing the Licensure Examination for Teachers (LET) held on August 25, 2002. She got her Master of Professional Accounting degree and Diploma of Early Childhood Education qualification from Australia.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Tutors' Qualification
+              </p>
+              <p class="about-subtext">
+                <!-- - Tutor 1 - <br> -->
+                Licensed Professional Teacher <br>
+                Master of Professional Accounting <br>
+                Chartered Accountant <br>
+                Diploma of Early Childhood Education 
+                <br> <br>
+                <!-- - Tutor 2 - <br>  -->
+                Computer Engineer
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Business
+              </p>
+              <p class="about-subtext">
+                JCD began her tutorial service during the summer of 2002 in Cebu City. Starting with tutoring a single elementary pupil, her clientele grew to four and then expanded further. On July 21, 2015, JCD took the step to register her small business with the Department of Trade and Industry (DTI). After 16 years of home-based tutoring, JCD Tutorial Services transitioned to a public commercial enterprise, officially opening on July 8, 2018. At present, JCD is registered in Australia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- row 4 -->
+      <section class="main-grid">
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
+    
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+              <p class="reviews-heading">
+                Reviews
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews section -->
+      <section id="reviews">
+        <div id="reviews-container">
+
+          <div class="main-preview">
+            <!-- First review -->
+            <div class="reviews-info review-card">
+              <p class="reviews-title">&#11088 &#11088 &#11088 &#11088 &#11088</p>
+              <p class="reviews-subtext">
+                What I liked about my tutor Jan is that she treats me like a family member and teaches me like a parent would do. My academics are improving and she made me challenge myself into more complex questions during my times at the sessions. I would highly recommend her as an experienced teacher and she is a great example of how a tutor should deliver their service. She is perfect in tutoring which made me build up my resilience in my learning.
+              </p>
+              <p class="reviews-title">- Vidula Liyanage</p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <!-- First review -->
+            <div class="reviews-info review-card">
+              <p class="reviews-title">&#11088 &#11088 &#11088 &#11088 &#11088</p>
+              <p class="reviews-subtext">
+                Abrielle enjoys mathematics. She's confident in reading and she's trying her best in spelling. At young age, she was able to do all of these and we're very grateful to JCD Tutorial, especially to Teacher Jan for her patience and understanding. Thank you
+              </p>
+              <p class="reviews-title">- Kate Anzia</p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title">
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext">
+                JCD Tutorial is one of the best Teaching service in Orange. Jan is absolutely talented and wonderful. She helped My son with his writing skill improvement. I must say having Jan to help my son learn to write has been blessings. I am strongly recommended Her service with 10/10. Very reasonable price and So kind and innovative in terms of teaching. Thank you Jan.
+              </p>
+              <p class="reviews-title">
+                - Amit Patel
+              </p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext">
+                I recommend JCD Tutorial Services because it has a reasonable price, and the tutor focuses on helping her tutees improve their skills. She brings out the best in her students because she motivates them and is very patient when teaching them.
+              </p>
+              <p class="reviews-title"> 
+                - Mae Mendoza
+              </p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext"> 
+                I was mam janice student way back in high school she is a great teacher she brings out the best in her student my favorite subject was math i learned so many methods from her in solving math problems i totally recommend her as a very tutor if she could just be my teacher in high school then it would so be great
+              </p>
+              <p class="reviews-title"> 
+                - Elenito Palang Jr.
+              </p>
+            </div>
+          </div>
+  
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext"> 
+                For me, JCD tutoring services is more than a tutorial service but also a venue where children get nurtured, valued and shaped to become better individuals. Thank you for the people behind JCD tutoring services. As Proverbs 22:6 says, "Train up a child in a way he should go and when he is old, he will not depart from it". God bless you always.
+              </p>
+              <p class="reviews-title"> 
+                - JC Princess
+              </p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext"> 
+                A place where you are treated like a family and at the same time, you are learning.
+              </p>
+              <p class="reviews-title"> 
+                - Dephren Jamdict
+              </p>
+            </div>
+          </div>
+
+          <div class="main-preview">
+            <div class="reviews-info review-card">
+              <p class="reviews-title"> 
+                &#11088 &#11088 &#11088 &#11088 &#11088
+              </p>
+              <p class="reviews-subtext"> 
+                Having teacher Jan as my tutor really helped me not just in my academics, but also helped me to be the independent and responsible person I am today. She makes studying and doing school works less tiring and boring. In my three years of having teacher Jan, she taught me vital study skills like time management and different strategies on how I study the content for my future exams, which I also apply in the present. That's why I'm really thankful to my mama for choosing teacher Jan to be my teacher because not only did I gain learnings, but I also gained fun memories and family.
+              </p>
+              <p class="reviews-title"> 
+                - Riza Dianne
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <!-- row 6 -->
+      <section class="main-grid">
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
+    
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+              <p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6MG32I2N3YDxB4xWGmrNjTeYMhEXIsUB-3om1UeXOrvPJpQ/viewform?usp=sf_link" target="_blank">
+                  <button class="review-button">
+                    Write Review
+                  </button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- location/hours/contact section -->
+      <section id="inquire" class="about-grid fade-in stagger-item">
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Contact
+              </p>
+              <p class="about-title">
+                Email
+              </p>
+              <p class="about-subtext">
+                <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
+                  jcdtutorialservices@gmail.com
+                </button>
+              </p>
+              <p class="about-title">
+                Message | Call
+              </p>
+              <p class="about-subtext phone-numbers">
+                <button class="copy-button" onclick="copyToClipboard('0410442716')">
+                  0410442716
+                </button>
+                <button class="copy-button" onclick="copyToClipboard('0499296726')">
+                  0499296726
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Hours
+              </p>
+              <p class="about-title">
+                Monday - Friday (Online)
+              </p>
+              <p class="about-subtext">
+                6:30PM - 8:30PM
+              </p>
+              <p class="about-title">
+                Saturday (Onsite)
+              </p>
+              <p class="about-subtext">
+                8AM - 8PM
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-info-grid">
+            <div class="about-info">
+              <p class="about">
+                Location
+              </p>
+              <p class="about-title">
+                Onsite
+              </p>
+              <p class="about-subtext">
+                <a href="https://www.google.com/maps/place/JCD+Tutorial+Services/@-33.3088302,149.0834143,17z/data=!4m15!1m8!3m7!1s0x6b102d40529866f7:0x54ef58f33fcb1fa1!2s10+Lappin+St,+Orange+NSW+2800,+Australia!3b1!8m2!3d-33.3088302!4d149.0834143!16s%2Fg%2F11rzgt74cv!3m5!1s0x6b12ab3c0b179c75:0x47b57b4bb89abd36!8m2!3d-33.3085412!4d149.082897!16s%2Fg%2F11jpdb67_h?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <button class="copy-button">10 Lappin Street, Orange, <br> NSW 2800, Australia</button>
+                </a>
+              </p>
+              <p class="about-title">
+                Online
+              </p>
+              <p class="about-subtext">
+                Worldwide - English
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- social media --> <!-- row 7 -->
+      <section class="about-grid">
+        <div></div>
+        <div class="about-info-grid">
+          <div class="about-info">
+            <p class="about">Connect With Us</p>
+            <div class="fb-container">
+              <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
+                <img class="fb-icon" src="icons/fb.svg">
+              </a>
+              <a href="https://www.instagram.com/jcdtutorialservices" target="_blank">
+                <img class="fb-icon" src="icons/ig.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+      <div class="fb-post-container">
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1CArgfjuEo/', '_blank')">
+          <img src="fbposts/2026jan20.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our very own Janisse Angela for winning the Best Female News Presenter Award 🎉<span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1bVfckwnt9/', '_blank')">
+          <img src="fbposts/2025dec11.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our tutee Abrielle for achieving an Excellence Award in English! 🌟<span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/17fjbCrya8/', '_blank')">
+          <img src="fbposts/2025dec10.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our tutee Abrielle for successfully completing the 2025 Premier’s Reading Challenge! 📚 <span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1FYZtH6UAs/', '_blank')">
+          <img src="fbposts/2025sep11.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Big thanks to our client Kate for sharing Abrielle’s achievement in school. We are proud of you! ❤️ <span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1DyHt2tJwH/', '_blank')">
+          <img src="fbposts/2025jul25.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">🎓 Congratulations to our very own Janluke Gabriel for earning his Bachelor of Science in Computer Engineering! 👨‍💻<span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1C4BLuCwTf/', '_blank')">
+          <img src="fbposts/2025apr16.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our very own Janisse Angela for completing Junior High School garnering numerous awards! 🏅<span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1RwVPN38mW/', '_blank')">
+          <img src="fbposts/2025mar26.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our very own Janluke Gabriel! We are pleasantly surprised for this achievement. 📜 <span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/188wrkVrW6/', '_blank')">
+          <img src="fbposts/2023mar11.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Congratulations to our tuteeArmaan for a job well done. We celebrate with you because we are proud of you. Keep it up ❤️ <span class="more">See More</span></div>
+        </div>
+
+        <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1BTuLEWDVZ/', '_blank')">
+          <img src="fbposts/2021dec11.jpg" alt="Post" class="fb-post-image">
+          <div class="fb-post-text">Thank you parents for trusting us and sharing this achievement! Congratulations to our tutee Shlok for getting a Gold Medal 🥇 <span class="more">See More</span></div>
+        </div>
+
+      </div>
+
+      <nav class="bottom-nav">
+        <button class="nav-button" onclick="scrollToSection('subjects')">📚<span>Subjects</span></button> <!--🎁-->
+        <button class="nav-button" onclick="scrollToSection('background')">📜<span>Overview</span></button> <!--section id="background" 🎄-->
+        <button class="nav-button" onclick="scrollToSection('reviews')">⭐<span>Reviews</span></button> 
+        <button class="nav-button" onclick="scrollToSection('inquire')">📧<span>Inquire</span></button>
+      </nav>
+
+      <button class="back-button" onclick="goBack()">🔙</button>
+    </main>
+
+    <div id="transition-overlay" class="transition-overlay"></div>
+
+    <script src="scripts/scroll-shadow.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/copy-to-clipboard.js"></script>
+    <script src="scripts/nav-emoji-pop.js"></script>
+    <!-- SNOW EFFECT - Comment out to disable snow -->
+    <!-- <script src="scripts/snow.js"></script> -->
+  </body>
+</html>

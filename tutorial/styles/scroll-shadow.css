@@ -1,0 +1,52 @@
+.scroll-shadow {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.scroll-shadow-top {
+  top: 0;
+  /*default theme*/
+  background: linear-gradient(to bottom, 
+    rgba(250, 172, 224, 0.95) 0%,
+    rgba(250, 172, 224, 0.6) 30%,
+    rgba(250, 172, 224, 0.2) 70%,
+    transparent 100%
+  );
+
+  /*christmas theme*/
+  /* background: linear-gradient(to bottom, 
+    rgba(119,221,119, 0.95) 0%,
+    rgba(119,221,119, 0.6) 30%,
+    rgba(119,221,119, 0.2) 70%,
+    transparent 100%
+  ); */
+}
+
+.scroll-shadow-bottom {
+  bottom: 0;
+  /*default theme*/
+  background: linear-gradient(to top, 
+    rgba(164, 216, 216, 0.95) 0%,
+    rgba(164, 216, 216, 0.6) 30%,
+    rgba(164, 216, 216, 0.2) 70%,
+    transparent 100%
+  );
+
+  /*christmas theme*/
+  /* background: linear-gradient(to top, 
+    rgba(255,105,97, 0.95) 0%,
+    rgba(255,105,97, 0.6) 30%,
+    rgba(255,105,97, 0.2) 70%,
+    transparent 100%
+  ); */
+}
+
+.show-shadow {
+  opacity: 1;
+}
