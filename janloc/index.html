@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./landing/styles/tutorial-card.css">
     <link rel="stylesheet" href="./landing/styles/janloc-card.css"> -->
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/animations.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
@@ -37,16 +38,7 @@
 
     <div id="transition-overlay" class="transition-overlay"></div>
 
-    <script>
-        function goBack() {
-        const overlay = document.getElementById('transition-overlay');
-        overlay.classList.add('slide-from-top');
-        
-        setTimeout(() => {
-            window.location.href = '../';
-        }, 800);
-    }  
-    </script> 
+    <script src="scripts/animations.js"></script>
     
 </body>
 </html>
