@@ -24,6 +24,17 @@
   }
 }
 
-.header {
+.header,.back-button, .nav-button {
   animation: headerSlideDown 0.8s ease-out;
+}
+
+@keyframes buttonsAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(+20%);
+    }
 }

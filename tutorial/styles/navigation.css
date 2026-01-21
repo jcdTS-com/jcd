@@ -1,6 +1,6 @@
 .bottom-nav {
   position: fixed;
-  bottom: 20px;
+  bottom: 35px;
   left: 50vw;
   transform: translateX(-50%);
   /*default theme*/
@@ -15,6 +15,7 @@
   border-radius: 50px;
   width: fit-content;
   overflow: hidden;  /* Contain hover effects */
+  animation: buttonsAnim 0.8s ease-in-out forwards;
 }
 
 .nav-button {
@@ -144,6 +145,7 @@
     padding: 0 5px;
     left: 50vw !important;
     transform: translateX(-50%) !important;
+    animation: buttonsAnim 0.8s ease-in-out forwards;
   }
 
   .nav-button {

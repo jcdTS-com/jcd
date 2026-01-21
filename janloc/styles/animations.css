@@ -24,6 +24,6 @@
   }
 }
 
-.header {
+.header, .back-button {
   animation: headerSlideDown 0.8s ease-out;
 }
