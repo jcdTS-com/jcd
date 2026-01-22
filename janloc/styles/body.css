@@ -194,8 +194,8 @@ body {
     text-align: center;
 }
 
-/* Hover capability detection - for devices with mouse/cursor */
-@media (hover: hover) and (pointer: fine) {
+/* Hover capability detection - for devices with mouse/cursor //and (pointer: fine)*/
+@media (hover: hover) {
     .card-content {
         opacity: 0;
         transition: opacity 0.3s ease;
