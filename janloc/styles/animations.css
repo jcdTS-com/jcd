@@ -36,7 +36,7 @@
   background: #f1952c;
   color: white;
   padding: 15px 30px;
-  border-radius: 8px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
   z-index: 10000;
@@ -48,4 +48,24 @@
 .copy-popup.show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* Adjust popup size for mobile screens */
+@media (max-width: 768px) {
+  .copy-popup {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    /* bottom: 80px; */
+  }
+}
+
+/* Even smaller for very small screens */
+@media (max-width: 480px) {
+  .copy-popup {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    /* bottom: 60px; */
+  }
 }
