@@ -110,6 +110,14 @@ body {
     z-index: 2;
 }
 
+.exLink {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+    opacity: 0.50;
+}
+
 .purchase-section {
     margin-bottom: 30px;
 }
