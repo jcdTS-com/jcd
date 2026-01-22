@@ -41,27 +41,6 @@ body {
     margin-top: 30px;
 }
 
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
-    position: relative; /* Important for absolute positioning inside */
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    /* cursor: pointer; */
-    overflow: hidden; /* Prevent content from spilling out */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 
-        0 12px 40px 0 rgba(241, 149, 44, 0.5),
-        inset 0 0 0 1px rgba(241, 149, 44, 0.5);
-}
-
 .card-header {
     margin-bottom: 30px;
     position: relative; /* Keep header above everything */
@@ -194,8 +173,29 @@ body {
     text-align: center;
 }
 
-/* Hover capability detection - for devices with mouse/cursor //and (pointer: fine)*/
-@media (hover: hover) {
+/* Base card styles */
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 40px 0 rgba(241, 149, 44, 0.5),
+        inset 0 0 0 1px rgba(241, 149, 44, 0.5);
+}
+
+/* Hover effects - only on devices with hover */
+@media (hover: hover) and (pointer: fine){
     .card-content {
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -205,7 +205,6 @@ body {
         opacity: 1;
     }
 
-    /* Hide image AND text when hovering */
     .card:hover > img.image-card,
     .card:hover > .image-text {
         opacity: 0;
@@ -213,7 +212,7 @@ body {
 }
 
 /* Touch devices - click to reveal */
-@media (hover: none) or (pointer: coarse) {
+@media (hover: none) or (pointer: coarse) {   
     .card-content {
         opacity: 0;
         max-height: 0;
@@ -226,16 +225,9 @@ body {
         max-height: 1000px;
     }
 
-    /* Hide image AND text when card is active (clicked) */
     .card.active > img.image-card,
     .card.active > .image-text {
         opacity: 0;
-    }
-
-    /* Image cards always show content on touch devices too */
-    .card.image-card .card-content {
-        opacity: 1;
-        max-height: none;
     }
 }
 
