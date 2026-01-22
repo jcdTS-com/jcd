@@ -42,9 +42,11 @@
 
 @keyframes slideInFromLeft {
     0% {
+        opacity: 0;
         transform: translateX(-100%);
     }
     100% {
+        opacity: 1;
         transform: translateX(0);
     }
 }
@@ -83,6 +85,7 @@
 .tutorial-card .service-title {
     font-size: 1.8rem;
     font-weight: bolder;
+    margin-top: 10px;
     margin-bottom: 1rem;
     color: #ffffff;
     text-shadow: 0 0 20px rgb(116, 255, 255);
@@ -105,5 +108,5 @@
 
 .tutorial-card:hover .service-description {
     font-weight: lighter;
-    text-shadow: 0 0 20px rgb(116, 255, 255);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
 }

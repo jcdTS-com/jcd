@@ -128,3 +128,14 @@ function goBack() {
         window.location.href = '../';
     }, 800);
 }
+
+// Only add click handlers for touch devices (devices without hover capability)
+const hasHover = window.matchMedia('(hover: hover)').matches;
+
+if (!hasHover) {
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+}

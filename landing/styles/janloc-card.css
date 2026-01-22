@@ -1,27 +1,47 @@
 @keyframes slideInFromRight {
     0% {
+        opacity: 0;
         transform: translateX(100%);
     }
     100% {
+        opacity: 1;
         transform: translateX(0);
     }
 }
 
+.janloc-card .icon {
+    animation: pulse 2s ease-in-out infinite;
+    max-width: 35%;
+    height: auto;
+    /* margin: -50px; */
+    transition: max-width 0.3s ease;
+    margin-top: -25px;
+}
+
 .janloc-card {
+    font-family: "Space Grotesk", monospace;
     animation: slideInFromRight 1s ease-out;
-    background: white;
+    background: #676767;
     border-radius: 12px;
     padding: 3rem 2rem;
     text-decoration: none;
     color: #333;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 100;
+    box-shadow: 0 0 40px rgba(247, 200, 147, 0.5), 
+                0 0 60px rgba(247, 200, 147, 0.5),
+                0 10px 40px rgba(247, 200, 147, 0.5);
 }
 
 .janloc-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgb(241, 149, 44), 
+                0 0 60px rgb(241, 149, 44),
+                0 10px 40px rgb(241, 149, 44);
+
+    .icon {
+        animation: none;
+    }
 }
 
 .janloc-card .service-icon {
@@ -31,14 +51,29 @@
 
 .janloc-card .service-title {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: bolder;
+    margin-top: 50px;
     margin-bottom: 1rem;
-    color: #667eea;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(241, 149, 44);
+    transition: all 0.25s ease;
+}
+
+.janloc-card:hover .service-title {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    font-weight: lighter;
 }
 
 .janloc-card .service-description {
-    color: #8b8b8b;
+    color: white;
+    font-weight: bolder;
     font-size: 1.1rem;
     line-height: 1.6;
+    transition: color 0.25s ease, font-weight 0.25s ease;
+    text-shadow: 0 0 10px rgb(241, 149, 44);
+}
+
+.janloc-card:hover .service-description {
+    font-weight: lighter;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
 }

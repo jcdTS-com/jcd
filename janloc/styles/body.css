@@ -1,0 +1,248 @@
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+body {
+    font-family: "Space Grotesk", monospace;
+    background: #676767;
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2 columns */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+    position: relative; /* Important for absolute positioning inside */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* cursor: pointer; */
+    overflow: hidden; /* Prevent content from spilling out */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 40px 0 rgba(241, 149, 44, 0.5),
+        inset 0 0 0 1px rgba(241, 149, 44, 0.5);
+}
+
+.card-header {
+    margin-bottom: 30px;
+    position: relative; /* Keep header above everything */
+    z-index: 2;
+}
+
+.brand {
+    width: 180px;
+    height: auto;
+}
+
+/* The product image that shows by default */
+.card > img.image-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #888888;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+    white-space: nowrap; 
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.purchase-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 0.85rem;
+    color: #767676;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.store-button {
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    /* transition: background 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 7px;
+}
+
+.store-button:hover {
+    background: #f1952c;
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 40px 0 rgba(241, 149, 44, 0.5),
+        inset 0 0 0 1px rgba(241, 149, 44, 0.5);
+}
+
+.distributors-section {
+    margin-top: 20px;
+}
+
+.distributor-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.distributor-btn {
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: background 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.distributor-btn:hover {
+    background: #f1952c;
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 40px 0 rgba(241, 149, 44, 0.5),
+        inset 0 0 0 1px rgba(241, 149, 44, 0.5);
+}
+
+.footer {
+    color: #cecece;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Hover capability detection - for devices with mouse/cursor */
+@media (hover: hover) and (pointer: fine) {
+    .card-content {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover .card-content {
+        opacity: 1;
+    }
+
+    /* Hide image AND text when hovering */
+    .card:hover > img.image-card,
+    .card:hover > .image-text {
+        opacity: 0;
+    }
+}
+
+/* Touch devices - click to reveal */
+@media (hover: none) or (pointer: coarse) {
+    .card-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease;
+    }
+
+    .card.active .card-content {
+        opacity: 1;
+        max-height: 1000px;
+    }
+
+    /* Hide image AND text when card is active (clicked) */
+    .card.active > img.image-card,
+    .card.active > .image-text {
+        opacity: 0;
+    }
+
+    /* Image cards always show content on touch devices too */
+    .card.image-card .card-content {
+        opacity: 1;
+        max-height: none;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    .card > img.image-card {
+        width: 90%;
+    }
+}
