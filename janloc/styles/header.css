@@ -31,7 +31,7 @@
 h1 {
   font-size: 2.5rem;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -39,18 +39,19 @@ h1 {
 }
 
 .subtitle {
-    color: #cecece;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    text-align: center;
-    white-space: nowrap; 
+  font-family: "Space Grotesk", monospace;
+  color: #cecece;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-align: center;
+  white-space: nowrap; 
 }
 
 .affiliateDisclosure {
-    color: #bebebe;
-    font-size: 0.9rem;
-    /* text-decoration: underline; */
-    cursor: pointer;
+  color: #bebebe;
+  font-size: 0.9rem;
+  /* text-decoration: underline; */
+  cursor: pointer;
 }
 
 .yt {

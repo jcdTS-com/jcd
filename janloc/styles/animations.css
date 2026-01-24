@@ -29,6 +29,7 @@
 }
 
 .copy-popup {
+  font-family: "Space Grotesk", monospace;
   position: fixed;
   top: 20px;
   left: 50%;

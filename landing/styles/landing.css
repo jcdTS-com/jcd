@@ -99,7 +99,7 @@ body {
     margin-left: -50px;
     animation: slideInFromTop 1s ease-out;
     z-index: 1;
-    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(8px 8px 50px rgba(0, 0, 0, 0.5));
 }
 
 .services {

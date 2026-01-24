@@ -29,7 +29,8 @@
 }
 
 body {
-    font-family: "Space Grotesk", monospace;
+    /* font-family: "Space Grotesk", monospace; */
+    font-family: "Exo", sans-serif;
     background: #676767;
     padding: 40px 20px;
 }
@@ -82,6 +83,7 @@ body {
 }
 
 .card-content {
+    font-family: "Space Grotesk", monospace;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -110,12 +112,17 @@ body {
     font-weight: 600;
 }
 
+.section-subtitle {
+    color: #777; margin-top: 10px;
+}
+
 .store-button {
+    font-family: "Exo", sans-serif;
     background: #4a4a4a;
     color: white;
     border: none;
     padding: 15px 15px;
-    border-radius: 5px;
+    border-radius: 75px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -124,6 +131,10 @@ body {
     /* transition: background 0.3s ease; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 7px;
+}
+
+.ali {
+    font-size: 0.75rem;
 }
 
 .store-button:hover {
@@ -146,13 +157,16 @@ body {
 }
 
 .distributor-btn {
+    font-family: "Exo", sans-serif;
     background: #4a4a4a;
     color: white;
     border: none;
     padding: 12px 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     font-size: 0.9rem;
     font-weight: 600;
+    border-radius: 75px;
     cursor: pointer;
     /* transition: background 0.3s ease; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -167,6 +181,7 @@ body {
 }
 
 .footer {
+    font-family: "Space Grotesk", monospace;
     color: #cecece;
     font-size: 1.1rem;
     margin-top: 50px;

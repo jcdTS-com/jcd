@@ -85,7 +85,7 @@
 .back-button {
   position: fixed;
   bottom: 20px;
-  right: calc(50% + 280px);
+  right: calc(73% + 280px);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -137,6 +137,18 @@
   }
 }
 
+@media (max-width: 1260px) {
+  .back-button {
+    bottom: 35px;
+    right: auto;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+}
+
 @media (max-width: 676px) {
   .bottom-nav {
     width: auto;
@@ -169,15 +181,6 @@
 
   .nav-button:not(:last-child)::after {
     height: 45px;  /* Slightly increased for taller buttons due to larger emoji */
-  }
-
-  .back-button {
-    bottom: 35px;
-    right: auto;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
   }
 }
 
