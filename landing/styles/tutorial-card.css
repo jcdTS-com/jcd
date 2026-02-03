@@ -10,36 +10,6 @@
   }
 }
 
-.icon {
-    animation: pulse 2s ease-in-out infinite;
-    max-width: 50%;
-    height: auto;
-    margin: -50px;
-    z-index: 1;
-    transition: max-width 0.3s ease;
-}
-
-@keyframes gradientShift {
-    0% {
-        background: rgb(132, 245, 245);
-        box-shadow: 0 0 40px rgb(164, 216, 216), 
-                    0 0 60px rgb(164, 216, 216),
-                    0 10px 40px rgb(164, 216, 216);
-    }
-    50% {
-        background: rgb(209, 112, 201);
-        box-shadow: 0 0 40px rgb(255,209,220), 
-                    0 0 60px rgb(255,209,220),
-                    0 10px 40px rgb(255,209,220);
-    }
-    100% {
-        background: rgb(132, 245, 245);
-        box-shadow: 0 0 40px rgb(164, 216, 216), 
-                    0 0 60px rgb(164, 216, 216),
-                    0 10px 40px rgb(164, 216, 216);
-    }
-}
-
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -51,9 +21,18 @@
     }
 }
 
+.icon {
+    animation: pulse 2s ease-in-out infinite;
+    max-width: 40%;
+    height: auto;
+    transition: max-width 0.3s ease;
+    margin: -50px;
+}
+
 .tutorial-card {
-    /* animation: gradientShift 7.5s ease infinite; */
     animation: slideInFromLeft 1s ease-out;
+    width: 400px;
+    height: 325px;
     background: rgb(255,209,220);
     border-radius: 12px;
     padding: 3rem 2rem;
@@ -85,7 +64,7 @@
 .tutorial-card .service-title {
     font-size: 1.8rem;
     font-weight: bolder;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 1rem;
     color: #ffffff;
     text-shadow: 0 0 20px rgb(116, 255, 255);

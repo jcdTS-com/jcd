@@ -11,16 +11,16 @@
 
 .janloc-card .icon {
     animation: pulse 2s ease-in-out infinite;
-    max-width: 35%;
+    max-width: 40%;
     height: auto;
-    /* margin: -50px; */
     transition: max-width 0.3s ease;
-    margin-top: -25px;
+    margin: -50px;
 }
 
 .janloc-card {
-    font-family: "Space Grotesk", monospace;
     animation: slideInFromRight 1s ease-out;
+    width: 400px;
+    height: 325px;
     background: #676767;
     border-radius: 12px;
     padding: 3rem 2rem;
@@ -50,6 +50,7 @@
 }
 
 .janloc-card .service-title {
+    font-family: "Exo", sans-serif;
     font-size: 1.8rem;
     font-weight: bolder;
     margin-top: 50px;
@@ -65,6 +66,7 @@
 }
 
 .janloc-card .service-description {
+    font-family: "Space Grotesk", monospace;
     color: white;
     font-weight: bolder;
     font-size: 1.1rem;

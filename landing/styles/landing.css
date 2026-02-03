@@ -69,6 +69,15 @@ body {
     }
 }
 
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .transition-overlay.slide-from-left {
     animation: slideFromLeft 0.8s ease-in-out forwards;
@@ -77,6 +86,11 @@ body {
 
 .transition-overlay.slide-from-right {
     animation: slideFromRight 0.8s ease-in-out forwards;
+    opacity: 1;
+}
+
+.transition-overlay.slide-from-bottom {
+    animation: slideFromBottom 0.8s ease-in-out forwards;
     opacity: 1;
 }
 
@@ -96,18 +110,55 @@ body {
     height: auto;
     margin-top: -500px;
     margin-bottom: -150px;
-    margin-left: -50px;
+    /* margin-left: -50px; */
     animation: slideInFromTop 1s ease-out;
     z-index: 1;
     filter: drop-shadow(8px 8px 50px rgba(0, 0, 0, 0.5));
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
 }
+
+.card-group {
+    display: contents; /* Doesn't create extra layout, children act as direct flex items */
+    transition: opacity 0.3s ease;
+}
+
+.card-group.hidden {
+    display: none;
+}
+
+.card-group.slide-in {
+    animation: slideInFromBottom 0.5s ease-out;
+}
+
+.toggle-btn {
+    margin-top: 2rem;
+    padding: 12px 30px;
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Archivo Black", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.toggle-btn:hover {
+    background: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 @media (max-width: 768px) {
     h1 {

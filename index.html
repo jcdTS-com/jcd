@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="./landing/styles/janloc-card.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- exo font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- space grotesk font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,54 +29,36 @@
         <img src="landing/logos/jcd.png" alt="JCD Timely Services" class="logo">
         
         <div class="services">
-            <a href="./tutorial/" class="tutorial-card">
-                <div class="service-icon">
-                    <img src="tutorial/icons/jcd-final.png" class="icon">
-                </div>
-                <h2 class="service-title">Tutorial Services</h2>
-                <p class="service-description">Personalized Academic Support <br> Primary — High School <br> Onsite | Online</p>
-            </a>
+            <!-- Main Cards -->
+            <div id="main-cards" class="card-group">
+                <a href="./tutorial/" class="tutorial-card">
+                    <div class="service-icon">
+                        <img src="tutorial/icons/jcd-final.png" class="icon">
+                    </div>
+                    <h2 class="service-title">Tutorial Services</h2>
+                    <p class="service-description">Personalized Academic Support <br> Primary — High School <br> Onsite | Online</p>
+                </a>
+            </div>
 
-            <a href="./janloc/" class="janloc-card">
-                <div class="service-icon">
-                    <img src="janloc/logos/pfp.png" class="icon">
-                </div>
-                <h2 class="service-title">Janloc</h2>
-                <p class="service-description">Sim Racing <br> Affiliate Links <br> Discounts Codes</p>
-            </a>
-                <!-- <h2 class="service-title">Janloc</h2>
-                <p class="service-description">Sim Racing <br> Affiliate Links | Discounts Codes</p>
-            </a> -->
+            <!-- Affiliate Cards (hidden by default) -->
+            <div id="affiliate-cards" class="card-group hidden">
+                <a href="./janloc/" class="janloc-card">
+                    <div class="service-icon">
+                        <img src="janloc/logos/pfp.png" class="icon">
+                    </div>
+                    <h2 class="service-title">Janloc</h2>
+                    <p class="service-description">Sim Racing <br> Affiliate Links <br> Discounts Codes</p>
+                </a>
+            </div>
         </div>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleCards()">Affiliates</button>
     </div>
 
     <div id="transition-overlay" class="transition-overlay"></div>
 
-    <script>
-        document.querySelectorAll('.tutorial-card, .janloc-card').forEach(card => {
-            card.addEventListener('click', function(e) {
-                e.preventDefault();
-                const href = this.getAttribute('href');
-                const overlay = document.getElementById('transition-overlay');
-                
-                // Get card's computed background color
-                const bgColor = window.getComputedStyle(this).backgroundColor || 'rgb(164, 216, 216)';
-                overlay.style.backgroundColor = bgColor;
-                
-                // Determine slide direction based on which card was clicked
-                if (this.classList.contains('tutorial-card')) {
-                    overlay.classList.add('slide-from-left');
-                } else if (this.classList.contains('janloc-card')) {
-                    overlay.classList.add('slide-from-right');
-                }
-                
-                // Navigate after animation completes
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 800);
-            });
-        });
-    </script>
-    
+    <script src="landing/scripts/animations.js"></script>
 </body>
+
 </html>
