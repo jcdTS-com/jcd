@@ -69,12 +69,12 @@
     color: #ffffff;
     text-shadow: 0 0 20px rgb(116, 255, 255);
     transition: all 0.25s ease;
+    white-space: nowrap;
 }
 
 .tutorial-card:hover .service-title {
     text-shadow: 0 0 20px rgb(255, 255, 255);
     font-weight: lighter;
-    white-space: nowrap;
 }
 
 .tutorial-card .service-description {
