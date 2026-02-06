@@ -74,6 +74,7 @@
 .tutorial-card:hover .service-title {
     text-shadow: 0 0 20px rgb(255, 255, 255);
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .tutorial-card .service-description {

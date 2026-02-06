@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<!-- NOTE
+Christmas Themes on:
+- icons
+- pictures
+- copy-to-clipboard.js
+- about.css
+- copy-animation.css
+- flip-card.css
+- general.css
+- header.css
+- main.css
+- navigation.css
+- reviews.css
+- scroll-shadow.css
+-->
+
+  <head>
+    <title>Tutorial Schedule</title>
+    <link rel="icon" type="image/x-icon" href="../landing/icons/jcd.png"> <!-- christmasicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../landing/styles/general.css">
+    <link rel="stylesheet" href="../landing/styles/about.css">
+    <link rel="stylesheet" href="../landing/styles/scroll-shadow.css">
+    <link rel="stylesheet" href="../landing/styles/animations.css">
+    <link rel="stylesheet" href="../landing/styles/copy-animation.css">
+    <link rel="stylesheet" href="../landing/styles/nav-emoji-pop.css">
+    <link rel="stylesheet" href="styles/sched.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <!-- SNOW EFFECT - Comment out to disable snow -->
+    <link rel="stylesheet" href="../landing/styles/snow.css">
+  </head>
+
+    <div class="schedule-section">
+        <div class="schedule-container">
+            <h1 class="top">Weekly Schedule</h1>
+
+            <div class="legend top">
+                <div class="legend-item">
+                    <div class="legend-box available"></div>
+                    <span>📖 Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box booked"></div>
+                    <span>📕 Booked</span>
+                </div>
+                <div class="legend-item">
+                    <span># High School only</span>
+                </div>
+            </div>
+
+            <p class="subtitle"></p>
+            <p class="subtitle top">Tutor 1</p>
+            <table class="schedule-table top">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">8:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">9:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">10:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">11:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">12:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">1:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">2:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">3:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">4:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">5:00 PM</td>
+                        <td class="booked">📕</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">6:00 PM</td>
+                        <td class="booked">📕</td> <!--Mon-->
+                        <td class="not-available">—</td>
+                        <td class="booked">📕</td> <!--Weds-->
+                        <td class="not-available">—</td>
+                        <td class="booked">📕</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">7:00 PM</td>
+                        <td class="booked">📕</td> <!--Mon-->
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="subtitle"></p>
+
+            <p class="subtitle top">Tutor 2</p>
+            <table class="schedule-table top">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">8:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">9:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">10:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">11:00 AM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">12:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">1:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">2:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="booked">📕</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">3:00 PM</td>
+                        <td class="not-available">—</td> <!--Mon-->
+                        <td class="not-available">—</td> <!--Tues-->
+                        <td class="not-available">—</td> <!--Weds-->
+                        <td class="not-available">—</td> <!--Thurs-->
+                        <td class="not-available">—</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">4:00 PM</td>
+                        <td class="available">📖</td> <!--Mon-->
+                        <td class="available">📖</td> <!--Tues-->
+                        <td class="available">📖</td> <!--Weds-->
+                        <td class="available">📖</td> <!--Thurs-->
+                        <td class="available">📖</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">5:00 PM</td>
+                        <td class="available">📖</td> <!--Mon-->
+                        <td class="available">📖</td> <!--Tues-->
+                        <td class="available">📖</td> <!--Weds-->
+                        <td class="available">📖</td> <!--Thurs-->
+                        <td class="available">📖</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">6:00 PM</td>
+                        <td class="available">📖</td> <!--Mon-->
+                        <td class="booked">📕</td> <!--Tues-->
+                        <td class="available">📖</td> <!--Weds-->
+                        <td class="available">📖</td> <!--Thurs-->
+                        <td class="available">📖</td> <!--Fri-->
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                    <tr>
+                        <td class="time-col">7:00 PM</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="not-available">—</td>
+                        <td class="available">📖#</td> <!--Sat-->
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <p class="subtext">* High School only</p> -->
+
+            <div class="contact top">
+                <p class="contact-title">Book Now</p> 
+                <label class="contact-label">Email | Message</label>
+                <div class="contact-buttons">
+                    <button class="copy-button" onclick="copyToClipboard('jcdtutorialservices@gmail.com')">
+                        jcdtutorialservices@gmail.com
+                    </button>
+                    <button class="copy-button" onclick="copyToClipboard('0410442716')">
+                        0410442716
+                    </button>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+      <button class="back-button" onclick="goBack()">🔙</button>
+    </main>
+
+    <div id="transition-overlay" class="transition-overlay"></div>
+
+    <script>
+      function goBack() {
+        const overlay = document.getElementById('transition-overlay');
+        overlay.classList.add('slide-from-bottom');
+        
+        setTimeout(() => {
+            window.location.href = '../';
+        }, 800);
+      }
+    </script>
+
+    <script src="../landing/scripts/scroll-shadow.js"></script>
+    <script src="../landing/scripts/copy-to-clipboard.js"></script>
+    <script src="../landing/scripts/nav-emoji-pop.js"></script>
+    <!-- SNOW EFFECT - Comment out to disable snow -->
+    <!-- <script src="scripts/snow.js"></script> -->
+  </body>
+</html>

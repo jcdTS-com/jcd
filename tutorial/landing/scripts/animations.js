@@ -128,3 +128,12 @@ function goBack() {
         window.location.href = '../';
     }, 800);
 }
+
+function sched() {
+    const overlay = document.getElementById('transition-overlaySched');
+    overlay.classList.add('slide-from-bottom');
+    
+    setTimeout(() => {
+        window.location.href = './schedule/';
+    }, 800);
+}

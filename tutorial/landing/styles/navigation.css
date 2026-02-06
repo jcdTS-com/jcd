@@ -90,7 +90,7 @@
   height: 60px;
   border-radius: 50%;
   background-color: #ededed;
-  border: 2px solid #676767;
+  border: 2px solid #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: flex;
@@ -98,12 +98,11 @@
   justify-content: center;
   transition: all 0.3s ease;
   z-index: 1002;
-  box-shadow: 0 4px 12px #494949;
 }
 
 .back-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 12px #f1952c;
+  box-shadow: 0 4px 12px rgb(255,209,220);
 }
 
 .back-button:active {
@@ -137,14 +136,30 @@
   }
 }
 
-@media (max-width: 1260px) {
-  .back-button {
-    bottom: 35px;
-    right: auto;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
+.transition-overlaySched {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(164, 216, 216);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0; /* Start hidden */
+}
+
+.transition-overlaySched.slide-from-bottom {
+  animation: slideFromBottom 0.8s ease-in-out forwards;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(+100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -181,8 +196,27 @@
   .nav-button:not(:last-child)::after {
     height: 45px;  /* Slightly increased for taller buttons due to larger emoji */
   }
+
+  .back-button {
+    bottom: 35px;
+    right: auto;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
 }
 
+@media (max-width: 1260px) {
+  .back-button {
+    bottom: 35px;
+    right: auto;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
 
 @media (max-width: 480px) {
   .bottom-nav {

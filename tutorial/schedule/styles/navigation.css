@@ -85,7 +85,7 @@
 .back-button {
   position: fixed;
   bottom: 20px;
-  right: calc(50% + 280px);
+  right: calc(73% + 280px);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -98,6 +98,7 @@
   justify-content: center;
   transition: all 0.3s ease;
   z-index: 1002;
+  box-shadow: 0 4px 12px #494949;
 }
 
 .back-button:hover {
@@ -115,24 +116,35 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ededed;
+  background-color: rgb(255,209,220);
   z-index: 9999;
   pointer-events: none;
   opacity: 0; /* Start hidden */
 }
 
-.transition-overlay.slide-from-top {
-  animation: slideFromTop 0.8s ease-in-out forwards;
+.transition-overlay.slide-from-bottom {
+  animation: slideFromBottom 0.8s ease-in-out forwards;
 }
 
-@keyframes slideFromTop {
+@keyframes slideFromBottom {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(+100%);
     opacity: 1;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 1260px) {
+  .back-button {
+    bottom: 35px;
+    right: auto;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
   }
 }
 

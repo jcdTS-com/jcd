@@ -26,21 +26,21 @@ Christmas Themes on:
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/scroll-shadow.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/flip-card.css">
-    <link rel="stylesheet" href="styles/subjects.css">
-    <link rel="stylesheet" href="styles/reviews.css">
-    <link rel="stylesheet" href="styles/copy-animation.css">
-    <link rel="stylesheet" href="styles/nav-emoji-pop.css">
-    <link rel="stylesheet" href="styles/fbposts.css">
+    <link rel="stylesheet" href="landing/styles/general.css">
+    <link rel="stylesheet" href="landing/styles/header.css">
+    <link rel="stylesheet" href="landing/styles/main.css">
+    <link rel="stylesheet" href="landing/styles/about.css">
+    <link rel="stylesheet" href="landing/styles/scroll-shadow.css">
+    <link rel="stylesheet" href="landing/styles/animations.css">
+    <link rel="stylesheet" href="landing/styles/navigation.css">
+    <link rel="stylesheet" href="landing/styles/flip-card.css">
+    <link rel="stylesheet" href="landing/styles/subjects.css">
+    <link rel="stylesheet" href="landing/styles/reviews.css">
+    <link rel="stylesheet" href="landing/styles/copy-animation.css">
+    <link rel="stylesheet" href="landing/styles/nav-emoji-pop.css">
+    <link rel="stylesheet" href="landing/styles/fbposts.css">
     <!-- SNOW EFFECT - Comment out to disable snow -->
-    <link rel="stylesheet" href="styles/snow.css">
+    <link rel="stylesheet" href="landing/styles/snow.css">
   </head>
 
 
@@ -50,7 +50,7 @@ Christmas Themes on:
     
     <header class="header">
       <div class="left-section">
-        <img class="jcd-big" src="icons/jcd-final.png" onclick="scrollToFbPosts()">
+        <img class="jcd-big" src="landing/icons/jcd-final.png" onclick="scrollToFbPosts()">
       </div>
       <div class="middle-section">
         <p class="offer">
@@ -75,13 +75,13 @@ Christmas Themes on:
             </p>
           </div>
           <div class="subject-image">
-            <img src="thumbnails/naplanicas.jpg" alt="NAPLAN & ICAS">
+            <img src="landing/thumbnails/naplanicas.jpg" alt="NAPLAN & ICAS">
           </div>
         </div>
 
         <div class="subject-container">
           <div class="subject-image">
-            <img src="thumbnails/readws.jpg" alt="Reading, Writing, & Spelling">
+            <img src="landing/thumbnails/readws.jpg" alt="Reading, Writing, & Spelling">
           </div>
           <div class="subject-content">
             <p class="main-title">
@@ -106,13 +106,13 @@ Christmas Themes on:
             </p>
           </div>
           <div class="subject-image">
-            <img src="thumbnails/maths.jpg" alt="Maths & Accounting">
+            <img src="landing/thumbnails/maths.jpg" alt="Maths & Accounting">
           </div>
         </div>
 
         <div class="subject-container">
           <div class="subject-image">
-            <img src="thumbnails/accounting.jpg" alt="Maths & Accounting">
+            <img src="landing/thumbnails/accounting.jpg" alt="Maths & Accounting">
           </div>
           <div class="subject-content">
             <p class="main-title">
@@ -172,7 +172,7 @@ Christmas Themes on:
               <div class="profile-container" onclick="toggleFlip()">
                 <div class="profile-card">
                   <div class="profile-front">
-                    <img class="profile-image" src="pictures/pfp.jpg"> <!-- christmas-->
+                    <img class="profile-image" src="landing/pictures/pfp.jpg"> <!-- christmas-->
                   </div>
                   <div class="profile-back">
                     <div class="profile-text">
@@ -357,9 +357,7 @@ Christmas Themes on:
 
         </div>
       </section>
-
-      
-
+  
       <!-- row 6 -->
       <section class="main-grid">
         <div class="reviews-preview">
@@ -467,7 +465,35 @@ Christmas Themes on:
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- schedule row -->
+      <section class="main-grid">
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
+    
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+              <p>
+                <button class="review-button" onclick="sched()">
+                  Session Schedules
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-preview">
+          <div class="reviews-info-grid">
+            <div class="reviews-info">
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- social media --> <!-- row 7 -->
@@ -478,10 +504,10 @@ Christmas Themes on:
             <p class="about">Connect With Us</p>
             <div class="fb-container">
               <a href="https://www.facebook.com/Nov.13.2002" target="_blank">
-                <img class="fb-icon" src="icons/fb.svg">
+                <img class="fb-icon" src="landing/icons/fb.svg">
               </a>
               <a href="https://www.instagram.com/jcdtutorialservices" target="_blank">
-                <img class="fb-icon" src="icons/ig.svg">
+                <img class="fb-icon" src="landing/icons/ig.svg">
               </a>
             </div>
           </div>
@@ -492,47 +518,47 @@ Christmas Themes on:
       <div class="fb-post-container">
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1CArgfjuEo/', '_blank')">
-          <img src="fbposts/2026jan20.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2026jan20.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our very own Janisse Angela for winning the Best Female News Presenter Award 🎉<span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1bVfckwnt9/', '_blank')">
-          <img src="fbposts/2025dec11.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025dec11.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our tutee Abrielle for achieving an Excellence Award in English! 🌟<span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/17fjbCrya8/', '_blank')">
-          <img src="fbposts/2025dec10.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025dec10.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our tutee Abrielle for successfully completing the 2025 Premier’s Reading Challenge! 📚 <span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1FYZtH6UAs/', '_blank')">
-          <img src="fbposts/2025sep11.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025sep11.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Big thanks to our client Kate for sharing Abrielle’s achievement in school. We are proud of you! ❤️ <span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1DyHt2tJwH/', '_blank')">
-          <img src="fbposts/2025jul25.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025jul25.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">🎓 Congratulations to our very own Janluke Gabriel for earning his Bachelor of Science in Computer Engineering! 👨‍💻<span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1C4BLuCwTf/', '_blank')">
-          <img src="fbposts/2025apr16.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025apr16.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our very own Janisse Angela for completing Junior High School garnering numerous awards! 🏅<span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1RwVPN38mW/', '_blank')">
-          <img src="fbposts/2025mar26.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2025mar26.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our very own Janluke Gabriel! We are pleasantly surprised for this achievement. 📜 <span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/188wrkVrW6/', '_blank')">
-          <img src="fbposts/2023mar11.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2023mar11.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Congratulations to our tuteeArmaan for a job well done. We celebrate with you because we are proud of you. Keep it up ❤️ <span class="more">See More</span></div>
         </div>
 
         <div class="fb-post-card" onclick="window.open('https://www.facebook.com/share/p/1BTuLEWDVZ/', '_blank')">
-          <img src="fbposts/2021dec11.jpg" alt="Post" class="fb-post-image">
+          <img src="landing/fbposts/2021dec11.jpg" alt="Post" class="fb-post-image">
           <div class="fb-post-text">Thank you parents for trusting us and sharing this achievement! Congratulations to our tutee Shlok for getting a Gold Medal 🥇 <span class="more">See More</span></div>
         </div>
 
@@ -549,11 +575,12 @@ Christmas Themes on:
     </main>
 
     <div id="transition-overlay" class="transition-overlay"></div>
+    <div id="transition-overlaySched" class="transition-overlaySched"></div>
 
-    <script src="scripts/scroll-shadow.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src="scripts/copy-to-clipboard.js"></script>
-    <script src="scripts/nav-emoji-pop.js"></script>
+    <script src="landing/scripts/scroll-shadow.js"></script>
+    <script src="landing/scripts/animations.js"></script>
+    <script src="landing/scripts/copy-to-clipboard.js"></script>
+    <script src="landing/scripts/nav-emoji-pop.js"></script>
     <!-- SNOW EFFECT - Comment out to disable snow -->
     <!-- <script src="scripts/snow.js"></script> -->
   </body>
