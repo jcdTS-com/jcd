@@ -42,3 +42,24 @@ function toggleCards() {
         }, 300);
     }
 }
+
+document.querySelectorAll('.tutorial-card, .janloc-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        const overlay = document.getElementById('transition-overlay');
+        
+        const bgColor = window.getComputedStyle(this).backgroundColor || 'rgb(164, 216, 216)';
+        overlay.style.backgroundColor = bgColor;
+        
+        if (this.classList.contains('tutorial-card')) {
+            overlay.classList.add('slide-from-left');
+        } else if (this.classList.contains('janloc-card')) {
+            overlay.classList.add('slide-from-right');
+        }
+        
+        setTimeout(() => {
+            window.location.href = href;
+        }, 800);
+    });
+});
