@@ -117,24 +117,78 @@ body {
 }
 
 .services {
-    display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    display: grid;
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .card-group {
-    display: contents; /* Doesn't create extra layout, children act as direct flex items */
-    transition: opacity 0.3s ease;
+    display: contents;
+    opacity: 1;
 }
 
 .card-group.hidden {
     display: none;
 }
 
+.card-group.fade-out {
+    animation: simpleFadeOut 0.3s ease-out forwards;
+}
+
 .card-group.slide-in {
     animation: slideInFromBottom 0.5s ease-out;
+}
+
+@keyframes simpleFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tutorial-card.fade-out,
+.janloc-card.fade-out {
+    animation: simpleFadeOut 0.3s ease-out forwards;
+}
+
+@keyframes simpleFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.card-group.slide-in {
+    animation: slideInFromBottom 0.5s ease-out;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .toggle-btn {
