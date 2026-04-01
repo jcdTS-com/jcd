@@ -47,7 +47,7 @@
   color: white;
   margin-bottom: 12px;
   line-height: 1.6;
-   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-subtext a {
