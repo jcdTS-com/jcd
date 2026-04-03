@@ -122,7 +122,7 @@
   opacity: 0; /* Start hidden */
 }
 
-.transition-overlay.slide-from-bottom {
+.transition-overlay.slide-from-top {
   animation: slideFromBottom 0.8s ease-in-out forwards;
 }
 

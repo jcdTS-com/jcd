@@ -120,15 +120,6 @@ function scrollToFbPosts() {
   document.querySelector('.fb-post-container').scrollIntoView({ behavior: 'smooth' });
 }
 
-function goBack() {
-    const overlay = document.getElementById('transition-overlay');
-    overlay.classList.add('slide-from-top');
-    
-    setTimeout(() => {
-        window.location.href = '../';
-    }, 800);
-}
-
 function sched() {
     const overlay = document.getElementById('transition-overlaySched');
     overlay.classList.add('slide-from-bottom');
